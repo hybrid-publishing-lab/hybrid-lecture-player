@@ -25,6 +25,7 @@ h3 {
 	text-transform: uppercase;
 	font-weight: normal;
 	margin: 20px 0px;
+	letter-spacing: 4px;
 }
 
 p + p {
@@ -47,18 +48,20 @@ p + p {
 }
 
 .title {
-	padding: 20px;
+	padding: 10px 6px 5px 5px;
 	width: 100%;
 	display: inline-block;
 	height: auto;
 	border-bottom: 8px solid white;
 	font-size: 24px;
+	letter-spacing: 1px;
 }
 .chapters {
 	width: 100%;
-	padding: 20px;
+	padding: 10px 6px 5px 5px;
 	display:inline-block;
 	height: auto;
+	cursor: pointer;
 }
 .chapters a, .chapters a:visited {
 	color: black;
@@ -70,6 +73,7 @@ p + p {
 	color: black;
 	text-transform: uppercase;
 	font-size: 24px;
+	letter-spacing: 1px;
 }
 
 /* MAIN */
@@ -79,12 +83,15 @@ article {
 }
 
 /* SLIDES + VIDEO */
+
 #content {
 	background-color: #000;
 	width: 100%;
 	padding: 0px;
 	border-bottom: 8px solid white;
 	border-top: 8px solid white;
+	display: inline-block;
+	margin-bottom: -6px;
 }
 /* SLIDES */
 #left-column{
@@ -134,10 +141,13 @@ article {
 
 #transcription {
 	width: 65%;
+	height: 300px;
+	overflow-y: scroll;
 	display:inline-block;
-	padding: 20px;
+	padding: 2% 5%;
 	background-color: white;
 	color: black;
+	margin-bottom: -6px;
 }
 #transcription span.active {
 	border-bottom: 4px solid red;
@@ -149,6 +159,7 @@ article {
 	height: 200px;
 	clear: both;
 	background-color: #666;
+	border-top: 8px solid white;
 }
 
 
