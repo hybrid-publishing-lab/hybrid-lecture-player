@@ -1,0 +1,76 @@
+html {
+    background-color: #333;
+    color: #efefef;
+}
+
+.double-sided {
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+
+.youtube iframe {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 90%;
+}
+
+
+#header {
+	background-color: #8c8c8c;
+	width: 100%;
+	height: 100px;
+}
+
+#content {
+	background-color: #000;
+	float: left;
+	clear: both;
+	width: 100%;
+	margin: 20px 0px;
+	padding: 0 20px;
+}
+
+#right-column {
+	width: 30%;
+	float: right;
+}
+
+#left-column{
+	width: 50%;
+	float: left;
+}
+
+#slide-container img{
+	width: 100%;
+}
+
+#player {
+	margin: 20px 20px;
+}
+#transcription-line {
+	width: 640px;
+	font-size: 3em;
+	padding: 20px;
+}
+
+#footer {
+	float: left;
+	width: 100%;
+	height: 200px;
+	clear: both;
+	background-color: #666;
+}
+
+.chapter-title {
+	float: left;
+	margin: 0 10px;
+	color: #ff8400;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+#transcription span.active {
+	background-color: #859cbf;
+}

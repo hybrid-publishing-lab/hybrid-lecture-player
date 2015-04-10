@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<library>
+	<book isbn10="1234567890" isbn13="1234567890123">
+		<title>PHP and MySQL</title>
+		<author fname="miguel" lname="alvarez">Miguel Alvarez</author>
+		<publisher>WebHole</publisher>
+		<price>1.99</price>
+	</book>
+	<book isbn10="8957468873" isbn13="0984837828189">
+		<title>JAVA 123</title>
+		<author fname="william" lname="vega">WIlliam Vega</author>
+		<publisher>WebHole</publisher>
+		<price>2.99</price>
+	</book>
+</library>
