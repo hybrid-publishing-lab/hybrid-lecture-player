@@ -342,6 +342,24 @@
               player.seekTo(secondsPosition);
             }
 
+            function goToSentence(e)
+            {
+              var secondsPosition = convertTimeCodeToSeconds(e.getAttribute("begin"));
+
+              // SLIDE UPDATE
+              slideNumber = findSlideNumber(secondsPosition);
+
+              var slideSource = 'images/' + slideNames[slideNumber-1];
+              document.getElementById("img").src = slideSource;
+
+              // CAPTION UPDATE
+              captionNumber = findCaptionNumber(secondsPosition);
+
+              document.getElementById("transcription-line").innerHTML = captionsText[captionNumber-1];
+
+              player.seekTo(secondsPosition);
+            }
+
         </script>
     </head>
     <body>
