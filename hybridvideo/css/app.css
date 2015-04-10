@@ -1,6 +1,19 @@
+/* Fixes the initial browserâs style */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
 html {
     background-color: #333;
     color: #efefef;
+	font-family: sans-serif;
 }
 
 .double-sided {
@@ -8,42 +21,43 @@ html {
     backface-visibility: visible;
 }
 
-
-.youtube iframe {
-    position: absolute;
-    top: 100px;
-    left: 0;
-    width: 90%;
-}
-
-
 #header {
-	background-color: #8c8c8c;
+	background-color: red;
 	width: 100%;
-	height: 100px;
+	padding: 20px;
+	display:inline-block;
+	height: auto;
 }
-
+article {
+	padding: 0px;
+}
 #content {
 	background-color: #000;
-	float: left;
-	clear: both;
 	width: 100%;
-	margin: 20px 0px;
-	padding: 0 20px;
-}
-
-#right-column {
-	width: 30%;
-	float: right;
+	margin: -4px;
+	padding: 0px;
+	border-bottom: 8px solid white;
+	border-top: 8px solid white;
 }
 
 #left-column{
 	width: 50%;
 	float: left;
+	border-right: 8px solid white;
+	margin-bottom: -1px;
 }
 
 #slide-container img{
 	width: 100%;
+}
+
+#right-column {
+	width: 50%;
+	float: right;
+}
+
+.youtube iframe {
+
 }
 
 #player {
@@ -51,7 +65,23 @@ html {
 }
 #transcription-line {
 	width: 640px;
-	font-size: 3em;
+	font-size: 130%;
+	padding: 20px;
+	text-align: center;
+}
+#transcription span.active {
+	background-color: #859cbf;
+}
+.chapter-title {
+	float: left;
+	margin: 0 10px;
+	color: #ff8400;
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+#transcription {
+	width: 100%;
+	display:inline-block;
 	padding: 20px;
 }
 
@@ -63,14 +93,4 @@ html {
 	background-color: #666;
 }
 
-.chapter-title {
-	float: left;
-	margin: 0 10px;
-	color: #ff8400;
-	text-transform: uppercase;
-	font-size: 1.5em;
-}
 
-#transcription span.active {
-	background-color: #859cbf;
-}
