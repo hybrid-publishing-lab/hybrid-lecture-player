@@ -15,9 +15,10 @@ html {
 }
 
 body {
-	font-size: 20px;
+	font-size: 18px;
 	font-family: sans-serif;
-	line-height: 22px;
+	line-height: 24px;
+	letter-spacing: 1px;
 }
 
 h3 {
@@ -89,7 +90,7 @@ img {
 	letter-spacing: 1px;
 }
 .chapter-title:before {
-	content: "►";
+	content: &#9658; ;
 	font-size: 18px;
 	vertical-align: 3px;
 	
@@ -168,7 +169,8 @@ article {
 	padding: 2% 5%;
 	background-color: white;
 	color: black;
-	margin-bottom: -6px;
+	margin-top: -4px;
+	margin-bottom: -8px;
 }
 #transcription span.active {
 	border-bottom: 4px solid red;
