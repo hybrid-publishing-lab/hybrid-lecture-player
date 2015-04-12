@@ -51,7 +51,7 @@ img {
 }
 
 .title {
-	padding: 10px 6px 5px 5px;
+	padding: 10px 6px 5px 15px;
 	width: 100%;
 	display: inline-block;
 	height: auto;
@@ -61,10 +61,13 @@ img {
 }
 .chapters {
 	width: 100%;
-	padding: 10px 6px 5px 5px;
+	padding: 10px 6px 5px 15px;
 	display:inline-block;
 	height: auto;
 	cursor: pointer;
+}
+.chapter-title:hover {
+	color: white;
 }
 .chapters a, .chapters a:visited {
 	color: black;
@@ -77,6 +80,19 @@ img {
 	text-transform: uppercase;
 	font-size: 24px;
 	letter-spacing: 1px;
+}
+.title-lecture {
+	margin: 0px 40px 0px 0px;
+	color: black;
+	text-transform: uppercase;
+	font-size: 24px;
+	letter-spacing: 1px;
+}
+.chapter-title:before {
+	content: "►";
+	font-size: 18px;
+	vertical-align: 3px;
+	
 }
 
 /* MAIN */
@@ -164,7 +180,7 @@ article {
 	height: 100px;
 	padding: 20px;
 	clear: both;
-	background-color: #666;
+	background-color: darkblue;
 	border-top: 8px solid white;
 }
 
