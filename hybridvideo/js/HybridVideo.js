@@ -15,6 +15,8 @@ var captionsText = [];
 var captionNumber = 1;
 var previousCaptionNumber = 1;
 
+var startingSeconds = getQueryVariable("s");
+
 $(document).ready(function()
 {
   $("#transcription").load("html/transcription.html");
@@ -27,6 +29,17 @@ $(document).ready(function()
   });
 
 });
+
+function getQueryVariable(variable)
+{
+       var query = window.location.search.substring(1);
+       var vars = query.split("&");
+       for (var i=0;i<vars.length;i++) {
+               var pair = vars[i].split("=");
+               if(pair[0] == variable){return pair[1];}
+       }
+       return(false);
+}
 
 function parseSlides(document){
     
@@ -44,8 +57,7 @@ function parseSlides(document){
         i += 1;
     });
 
-    // console.log("slideInPoints = " + slideInPoints);
-    // console.log("slideNames = " + slideNames);
+
 
     var timerid = setInterval(checkAndChangeSlideAndText, 50);
 }
@@ -280,7 +292,14 @@ function onYouTubeIframeAPIReady() {
 
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
-  event.target.playVideo();
+  if(startingSeconds != false)
+  {
+    goToChapter(startingSeconds);
+  }
+  else
+  {
+    event.target.playVideo();
+  }
 }
 
 // 5. The API calls this function when the player's state changes.
@@ -352,7 +371,7 @@ function goToSentence(e)
 // Make Citation
 function makeCitation()
 {
-  var text = "http://mcluhan.gibraltarwalk.com/hybridvideo/index.html?s=" + player.getCurrentTime();
+  var text = "http://mcluhan.gibraltarwalk.com/hybridvideo/index.html?s=" + Math.round(player.getCurrentTime());
   window.prompt("Copy to clipboard: PC: Ctrl+C, Enter - OSX Cmd+C, Enter", text);
 }
 

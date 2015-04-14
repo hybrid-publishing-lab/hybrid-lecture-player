@@ -1,0 +1,132 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>HYBRID VIDEO - MCLUHAN'S MEDIA PRACTICE</title>
+
+        <!-- Hybrid Video CSS -->
+        <link rel="stylesheet" type="text/css" href="css/app.css" />
+
+        <!-- JQUERY -->
+         <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+
+        <!-- Hybrid Video app code -->
+        <script src="js/HybridVideo.js"></script>
+        
+    </head>
+    <body>
+        <!-- HEADER -->
+
+       <header>
+          <div id="header">
+            <div class="title">HYBRID VIDEO</div>
+            <div id="chapters">
+                <div class="title-lecture" onclick="goToChapter(60)">
+                  <a href="#">Finally Getting the Message: McLuhan&#146;s Media Practice</a>
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(300)">
+                  &#8258; Orality
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(600)">
+                  &#8258; Reading Writing
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(900)">
+                  &#8258; Viewing Listening / Watching
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(1200)">
+                  &#8258; Being a Character
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(1500)">
+                  &#8258; Research Publishing
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(1800)">
+                  &#8258; Publication (Counterblast)
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(2100)">
+                  &#8258; Blow-Up
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(2400)">
+                  &#8258; The Freewheeling Marshall McLuhan 
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(2700)">
+                  &#8258; Mechanical Bride
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(3000)">
+                  &#8258; Counterblast (edition 1 and 2)
+                </div>
+                
+                <div class="chapter-title" onclick="goToChapter(3300)">
+                  &#8258; The McLuhan DEW-Line
+                </div>
+            </div>
+            <div id="precis">
+              Chapter precis text goes here, not too much longer than this text: just enough to give a quick idea of the contents.
+            </div>
+          </div>
+          
+        </header>
+
+        <nav>
+        </nav>
+
+        <article>
+          <!-- CONTENT -->
+          <div id="content">
+
+            <!-- LEFT COLUMN -->
+            <div id="left-column">
+              <!-- SLIDE -->
+              <div id="slide-container">
+                <img id="img" src="images/Slide001.jpg">
+              </div>
+            </div>
+
+
+            <!-- RIGHT COLUMN -->
+            <div id="right-column">
+              <!-- VIDEO -->
+              <div id="video-container">
+                <div id="player">
+                </div>
+              </div>
+
+              <!-- BELOW VIDEO -->
+              <div id="below-video-container">
+                <div id="transcription-line">
+                  Lecture will begin shortly.
+                </div>
+                <div id="citation-button">
+                   <button type="button" onclick="makeCitation()">MAKE CITATION URL LINK</button>
+                </div>
+              </div>
+            </div>
+
+        </div>
+
+        <div id="transcription">
+        </div>
+        
+        <div id="extra">
+        </div>
+
+      </article>
+
+      <!-- FOOTER -->
+      <footer>
+        <div id="footer">
+          CREDITS ETC... GO HERE
+        </div>
+      </footer>
+
+      
+    </body>
+</html>
