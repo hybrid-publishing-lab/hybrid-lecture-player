@@ -40,7 +40,7 @@
 	<slide inpoint="00:22:06.200" id="38">Slide038.jpg</slide>
 	<slide inpoint="00:22:14.420" id="39">Slide039.jpg</slide>
 	<slide inpoint="00:22:37.820" id="40">Slide040.jpg</slide>
-	<slide inpoint="00:23:23.600" id="41">Slide041.jpg</slide>different slide in lecture
+	<slide inpoint="00:23:23.600" id="41">Slide041.jpg</slide><!-- different slide in lecture -->
 	<slide inpoint="00:25:10.590" id="42">Slide042.jpg</slide>
 	<slide inpoint="00:25:28.140" id="43">Slide043.jpg</slide>
 	<slide inpoint="00:25:30.040" id="42">Slide042.jpg</slide>
@@ -52,9 +52,9 @@
 	<slide inpoint="00:27:08.000" id="48">Slide047.jpg</slide>
 	<slide inpoint="00:27:18.920" id="49">Slide048.jpg</slide>
 	<slide inpoint="00:27:29.000" id="50">Slide049.jpg</slide>
-	<slide inpoint="00:27:46.490" id="51">SlideMISSING.jpg</slide>"cigar bands"
+	<slide inpoint="00:27:46.490" id="51">SlideMISSING.jpg</slide><!-- "cigar bands" -->
 	<slide inpoint="00:28:24.000" id="52">Slide050.jpg</slide>
-	<slide inpoint="00:28:34.000" id="53">SlideAUDIO.jpg</slide>here has to be a slide for audio clip(we could improvise)
+	<slide inpoint="00:28:34.000" id="53">SlideAUDIO.jpg</slide><!-- here has to be a slide for audio clip(we could improvise) -->
 	<slide inpoint="00:30:00.640" id="54">Slide059.jpg</slide>
 	<slide inpoint="00:31:14.000" id="55">Slide051.jpg</slide>
 	<slide inpoint="00:31:49.260" id="56">Slide052.jpg</slide>
@@ -114,11 +114,11 @@
 	<slide inpoint="00:45:57.000" id="110">Slide106.jpg</slide>
 	<slide inpoint="00:46:09.300" id="111">Slide107.jpg</slide>
 	<slide inpoint="00:46:16.160" id="112">Slide108.jpg</slide>
-	<slide inpoint="00:46:23.670" id="113">Slide109.jpg</slide>Mechanical Bride
+	<slide inpoint="00:46:23.670" id="113">Slide109.jpg</slide><!-- Mechanical Bride  -->
 	<slide inpoint="00:47:13.520" id="114">Slide110.jpg</slide>
 	<slide inpoint="00:47:21.200" id="115">Slide111.jpg</slide>
 	<slide inpoint="00:47:22.000" id="116">Slide112.jpg</slide>
-	<slide inpoint="00:47:25.000" id="117">Slide113.jpg</slide>Counterblast
+	<slide inpoint="00:47:25.000" id="117">Slide113.jpg</slide><!-- Counterblast  -->
 	<slide inpoint="00:48:08.000" id="118">Slide114.jpg</slide>
 	<slide inpoint="00:48:38.280" id="119">Slide115.jpg</slide>
 	<slide inpoint="00:48:41.100" id="120">Slide116.jpg</slide>
