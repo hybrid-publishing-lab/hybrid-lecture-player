@@ -74,7 +74,8 @@ img {
 #precis {
 	width: 20%;
 	float: left;
-	background-color: rgb(230, 24, 30);
+	color: rgb(230, 24, 30);
+	background-color: rgb(0, 0, 0);
 	height: 100%;
 }
 

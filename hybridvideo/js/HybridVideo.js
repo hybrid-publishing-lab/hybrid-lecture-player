@@ -375,6 +375,66 @@ function makeCitation()
   window.prompt("Copy to clipboard: PC: Ctrl+C, Enter - OSX Cmd+C, Enter", text);
 }
 
+// Change Precis Content
+
+function changePrecisContent(chapterNumber)
+{
+  switch(chapterNumber)
+  {
+    case 0:
+        document.getElementById("precis").innerHTML='Chapter precis text goes here, not too much longer than this text: just enough to give a quick idea of the contents.';
+        break;
+
+    case 1:
+        document.getElementById("precis").innerHTML='Chapter / Section 1 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 2:
+        document.getElementById("precis").innerHTML='Chapter / Section 2 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 3:
+        document.getElementById("precis").innerHTML='Chapter / Section 3 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 4:
+        document.getElementById("precis").innerHTML='Chapter / Section 4 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 5:
+        document.getElementById("precis").innerHTML='Chapter / Section 5 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 6:
+        document.getElementById("precis").innerHTML='Chapter / Section 6 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 7:
+        document.getElementById("precis").innerHTML='Chapter / Section 7 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 8:
+        document.getElementById("precis").innerHTML='Chapter / Section 8 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 9:
+        document.getElementById("precis").innerHTML='Chapter / Section 9 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 10:
+        document.getElementById("precis").innerHTML='Chapter / Section 10 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    case 11:
+        document.getElementById("precis").innerHTML='Chapter / Section 11 Precis. Not too much longer than this text. Nice and Short.';
+        break;
+
+    default:
+        break;
+  }
+} 
+
+
 
 
 
