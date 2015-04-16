@@ -186,6 +186,7 @@ article {
 /* TRANSCRIPTION TEXT */
 
 #transcription {
+	float: left;
 	width: 65%;
 	height: 300px;
 	overflow-y: scroll;
@@ -216,6 +217,12 @@ article {
 	border-top: 8px solid white;
 }
 
+/* XTRA */
+#xtra {
+	width: 35%;
+	float: right;
+	color: #FFFFFF;
+}
 
 @media (min-width:250px) and (max-width:540px) {
 	#left-column{

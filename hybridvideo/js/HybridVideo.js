@@ -15,6 +15,13 @@ var captionsText = [];
 var captionNumber = 1;
 var previousCaptionNumber = 1;
 
+// CONTEXTUAL XML
+var contextualHtmlInPoints = [];
+var contextualHtml = [];
+
+var contextualHtmlNumber = 1;
+var previouscontextualHtmlNumber = 1;
+
 var startingSeconds = getQueryVariable("s");
 
 $(document).ready(function()
@@ -58,10 +65,33 @@ function parseSlides(document){
     });
 
 
+    $.ajax({
+      type: "GET",
+      url: "data/ContextualHtml.xml",
+      dataType: "xml",
+      success: parseContextualHtml
+    });
+
+}
+
+function parseContextualHtml(document){
+
+    var i = 0;
+
+    $(document).find("xtra").each(function(){
+
+        var timecode = $(this).attr('begin');
+        var seconds = convertTimeCodeToSeconds(timecode);
+        var name = $(this).text();
+
+        contextualHtmlInPoints[i] = seconds;
+        contextualHtml[i] = name;
+
+        i += 1;
+    });
 
     var timerid = setInterval(checkAndChangeSlideAndText, 50);
 }
-
 
 function parseCaptions(document){
     
@@ -114,13 +144,25 @@ function checkAndChangeSlideAndText()
 
       captionNumber += 1;
 
-      console.log("captionNumber = " + captionNumber);
       addActiveClassToTranscript(captionNumber-1);
 
       removeActiveClassToTranscript(previousCaptionNumber-1);
 
       previousCaptionNumber = captionNumber;
     }
+
+
+    // Check If We Need to Change Contextual Html
+    if(timeNow >= contextualHtmlInPoints[contextualHtmlNumber-1])
+    {
+
+      document.getElementById("xtra").innerHTML = contextualHtml[contextualHtmlNumber-1];
+
+      contextualHtmlNumber += 1;
+
+      previouscontextualHtmlNumber = contextualHtmlNumber;
+    }
+
   }
 
   
@@ -242,6 +284,33 @@ function findCaptionNumber(timeNow)
     return captionNo;
 }
 
+
+// FIND THE CORRECT CONTEXTUAL HTML IN TIMELINE
+function findContextualHtmlNumber(timeNow)
+{
+    var notFoundYet = true;
+    var i = 0;
+    var contextualHtmlNo = 0;
+    var contextualHtmlLength = contextualHtmlInPoints.length;
+    
+    while(notFoundYet && i < contextualHtmlLength)
+    {
+      if(timeNow < contextualHtmlInPoints[i+1])
+      {
+        contextualHtmlNo = i+1;
+        notFoundYet = false;
+      }
+      i++;
+    }
+    
+    if(timeNow > contextualHtmlInPoints[contextualHtmlLength-1])
+    {
+      contextualHtmlNo = contextualHtmlLength-1;
+    }
+
+    return contextualHtmlNo;
+}
+
 // CONVERT TIMECODE STRING TO SECONDS NUMBER
 function convertTimeCodeToSeconds(timeString)
 {
@@ -326,6 +395,11 @@ function onPlayerStateChange(event) {
   captionNumber = findCaptionNumber(timeNow);
 
   document.getElementById("transcription-line").innerHTML = captionsText[captionNumber-1];
+
+  // CONTEXTUAL HTML UPDATE
+  contextualHtmlNumber = findContextualHtmlNumber(timeNow);
+
+  document.getElementById("xtra").innerHTML = contextualHtml[contextualHtmlNumber-1];
 
 }
 
