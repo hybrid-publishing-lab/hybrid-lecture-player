@@ -456,51 +456,78 @@ function changePrecisContent(chapterNumber)
   switch(chapterNumber)
   {
     case 0:
-        document.getElementById("precis").innerHTML='Chapter precis text goes here, not too much longer than this text: just enough to give a quick idea of the contents.';
+        document.getElementById("precis").innerHTML = "Section descriptions.";
         break;
 
+    // Intro With Steve Kovats
     case 1:
-        document.getElementById("precis").innerHTML='Chapter / Section 1 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "Stephen Kovats provides the context in which the lecture takes places and introduces Graham";
         break;
 
+    // Finally Getting the Message: McLuhan's Media Practice
     case 2:
-        document.getElementById("precis").innerHTML='Chapter / Section 2 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "Introduction. Graham Larkin&rsquo;s take on McLuhan&rsquo;s media practice concerned with the materiality of communications";
         break;
 
+    // Orality
     case 3:
-        document.getElementById("precis").innerHTML='Chapter / Section 3 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "A glimpse into the archival evidence for the pre-literate stage of McLuhan&rsquo;s life";
         break;
 
+    // Reading Writing
     case 4:
-        document.getElementById("precis").innerHTML='Chapter / Section 4 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "Examines the young Marshall&rsquo;s literacy, and his early collections";
         break;
 
+    // Viewing, Listening/Watching
     case 5:
-        document.getElementById("precis").innerHTML='Chapter / Section 5 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "surveys the very detailed evidence for McLuhan&rsquo;s youthful involvement with radio and cinema";
         break;
 
+    // Being a Character
     case 6:
-        document.getElementById("precis").innerHTML='Chapter / Section 6 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "surveys some fresh evidence for McLuhan&rsquo;s interests in rhetoric, including public speaking";
         break;
 
+    // Research Publishing
     case 7:
-        document.getElementById("precis").innerHTML='Chapter / Section 7 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "examines material aspects of McLuhan&rsquo;s scholarly writing, including manuscripts and typescripts for his major publications";
         break;
 
+    // Blow Up
     case 8:
-        document.getElementById("precis").innerHTML='Chapter / Section 8 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "charts McLuhan’s media image throughout the long 1960s";
         break;
 
+    // Epilogue: The Freewheeling Marshall McLuhan
     case 9:
-        document.getElementById("precis").innerHTML='Chapter / Section 9 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "compares McLuhan&rsquo;s media persona to Bob Dylan and other performers exhibiting an improvisatory, devil-may-care attitude";
         break;
 
+    // PUBLICATIONS
+    // Mechanical Bride
     case 10:
-        document.getElementById("precis").innerHTML='Chapter / Section 10 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "Marshall McLuhan&rsquo;s first book and a original study in popular culture, composed of a number of short essays that can be read in any order";
         break;
 
+    // Counterblast
     case 11:
-        document.getElementById("precis").innerHTML='Chapter / Section 11 Precis. Not too much longer than this text. Nice and Short.';
+        document.getElementById("precis").innerHTML = "More a manifesto than a book, Counterblast is a typographically explosive compilation of short essays and probes (complex ideas compressed into a few thought-provoking words), all of which focus on the effects of media on the human condition";
+        break;
+
+    // Understanding Media & The Medium is the Message
+    case 12:
+        document.getElementById("precis").innerHTML = "";
+        break;
+
+    // The McLuhan DEW-Line
+    case 13:
+        document.getElementById("precis").innerHTML = "Intended to stimulate problem-solving and thinking, in a manner that is also known as ‘thinking-outside-the-box'";
+        break;
+
+    // Explorations
+    case 14:
+        document.getElementById("precis").innerHTML = "Journal together with Edmund Carpenter throughout the 50s. Studies in Cultural Communications";
         break;
 
     default:
