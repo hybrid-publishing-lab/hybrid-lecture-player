@@ -47,7 +47,7 @@ img {
 #header {
 	width: 100%;
 	padding: 0px;
-	background-color: rgb(230, 24, 30);
+	background-color: rgb(240, 20, 50);
 	color: black;
 }
 
@@ -68,14 +68,14 @@ img {
 	display:inline-block;
 	height: auto;
 	cursor: pointer;
-	background-color: rgb(230, 24, 30);
+	background-color: rgb(240, 20, 50);
 	border-right: 8px solid white;
 }
 
 #precis {
 	width: 20%;
 	float: left;
-	color: rgb(230, 24, 30);
+	color: rgb(240, 20, 50);
 	background-color: rgb(0, 0, 0);
 	height: 100%;
 	padding: 10px 6px 5px 15px;
@@ -215,7 +215,7 @@ article {
 	height: 100px;
 	padding: 20px;
 	clear: both;
-	background-color: darkblue;
+	background-color: rgb(45, 53, 116);
 	border-top: 8px solid white;
 }
 
