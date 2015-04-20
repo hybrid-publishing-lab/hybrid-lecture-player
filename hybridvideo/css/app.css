@@ -77,6 +77,7 @@ img {
 	color: rgb(230, 24, 30);
 	background-color: rgb(0, 0, 0);
 	height: 100%;
+	padding: 10px 6px 5px 15px;
 }
 
 .chapter-title:hover {
@@ -222,6 +223,7 @@ article {
 	width: 35%;
 	float: right;
 	color: #FFFFFF;
+	padding: 10px 6px 5px 15px;
 }
 
 @media (min-width:250px) and (max-width:540px) {
