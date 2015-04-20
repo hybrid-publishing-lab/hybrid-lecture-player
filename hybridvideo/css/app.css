@@ -69,6 +69,7 @@ img {
 	height: auto;
 	cursor: pointer;
 	background-color: rgb(230, 24, 30);
+	border-right: 8px solid white;
 }
 
 #precis {
