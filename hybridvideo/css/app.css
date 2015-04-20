@@ -108,7 +108,7 @@ img {
 }
 
 .chapter-title:before {
-	content: &#9658; ;
+	content: url('images/play.png');
 	font-size: 18px;
 	vertical-align: 3px;
 }
