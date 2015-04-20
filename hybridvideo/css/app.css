@@ -204,7 +204,7 @@ article {
 }
 
 #transcription span:hover {
-	border-bottom: 4px solid #666666;
+	color: red;
 	cursor: pointer;
 }
 
