@@ -1,15 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<paragraphs>
+	
 
-	<p id="paragraph001">
+	<p id="paragraph001" begin="00:00:03.436" end="00:00:32.401">
 		<h3>Introduction</h3>
-		<span id="lineID0001" begin="00:00:03.436" end="00:00:05.748" onclick="goToSentence(this)">So, ladies and gentleman. Let's take a seat.</span>
-		<span id="lineID0002" begin="00:00:05.748" end="00:00:07.303" onclick="goToSentence(this)">We will be starting shortly.</span>
-		<span id="lineID0003" begin="00:00:18.872" end="00:00:22.610" onclick="goToSentence(this)">So first of all Bonjour and Welcome in the Canadian Embassy in Germany</span>
-		<span id="lineID0004" begin="00:00:22.866" end="00:00:25.099" onclick="goToSentence(this)">Herzlich Willkommen in der Kanadischen Botschaft in Berlin (German)</span>
-		<span id="lineID0005" begin="00:00:25.384" end="00:00:26.468" onclick="goToSentence(this)">Welcome to the Canadian Embassy</span>
-		<span id="lineID0006" begin="00:00:26.690" end="00:00:29.885" onclick="goToSentence(this)">Specifically in the Marshall McLuhan Salon here in the Embassy.</span>
-		<span id="lineID0007" begin="00:00:30.125" end="00:00:32.401" onclick="goToSentence(this)">We're really happy to have you here tonight</span>
 	</p>
-	<p id="paragraph002">
+	<p id="paragraph002" end="00:00:32.401">
 		<span id="lineID0008" begin="00:00:32.401" end="00:00:36.265" onclick="goToSentence(this)">I have the great pleasure of introducing or welcome you all</span>
 		<span id="lineID0009" begin="00:00:36.265" end="00:00:37.095" onclick="goToSentence(this)">here to our salon</span>
 		<span id="lineID0010" begin="00:00:37.095" end="00:00:42.405" onclick="goToSentence(this)">which has the largest McLuhan archive in all of Europe, something we're very proud of</span>
@@ -1930,4 +1926,8 @@
 		<span id="lineID1698" begin="01:42:25.569" end="01:42:31.489" onclick="goToSentence(this)">[Graham Larkin] Thank you for coming!</span>
 	</p>
 
+
+
+
+</paragraphs>
 

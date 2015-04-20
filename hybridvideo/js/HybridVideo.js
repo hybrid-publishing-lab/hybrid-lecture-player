@@ -533,7 +533,13 @@ function changePrecisContent(chapterNumber)
     default:
         break;
   }
-} 
+}
+
+
+function synchronizeTranscription()
+{
+  console.log("synchronizeTranscription");
+}
 
 
 

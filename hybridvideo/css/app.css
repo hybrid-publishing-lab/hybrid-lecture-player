@@ -186,10 +186,14 @@ article {
 }
 
 /* TRANSCRIPTION TEXT */
-
-#transcription {
+#transcription-container {
 	float: left;
 	width: 65%;
+	
+	background-color: white;
+}
+
+#transcription {
 	height: 300px;
 	overflow-y: scroll;
 	display:inline-block;
