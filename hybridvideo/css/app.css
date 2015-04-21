@@ -185,6 +185,18 @@ article {
 	width: 20%;
 }
 
+#language-button {
+	margin-top: 20px;
+	float: left;
+	width: 20%;
+}
+
+option.head {
+    selected:selected;
+    display:none;
+    disabled:disabled;
+}
+
 /* TRANSCRIPTION TEXT */
 #transcription-container {
 	float: left;
