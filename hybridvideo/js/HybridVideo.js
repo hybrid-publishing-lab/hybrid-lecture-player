@@ -1,6 +1,12 @@
 // HYBRID VIDEO
 // DEPENDENT ON HTML STRUCTURE IN index.html
 
+// PARAGRAPHS
+var paragraphsInPoints = [];
+var paragraphsIDs = [];
+var paragraphNumber = 1;
+var previousParagraphNumber = 1;
+
 // SLIDES
 var slideInPoints = [];
 var slideNames = [];
@@ -35,6 +41,13 @@ $(document).ready(function()
     success: parseCaptions
   });
 
+  $.ajax({
+    type: "GET",
+    url: "data/paragraphs.xml",
+    dataType: "xml",
+    success: parseParagraphs
+  });
+
 });
 
 function getQueryVariable(variable)
@@ -46,6 +59,24 @@ function getQueryVariable(variable)
                if(pair[0] == variable){return pair[1];}
        }
        return(false);
+}
+
+function parseParagraphs(document){
+    
+    var i = 0;
+
+    $(document).find("p").each(function(){
+
+        var timecode = $(this).attr('begin');
+        var seconds = convertTimeCodeToSeconds(timecode);
+
+        var id = $(this).attr('id');
+
+        paragraphsInPoints[i] = seconds;
+        paragraphsIDs[i] = id;
+        i += 1;
+
+    });
 }
 
 function parseSlides(document){
@@ -539,10 +570,63 @@ function changePrecisContent(chapterNumber)
 function synchronizeTranscription()
 {
   console.log("synchronizeTranscription");
+
+  // Find paragraph number
+  var paragraphNumber;
+
+  if(player.getCurrentTime)
+  {
+    var timeNow = player.getCurrentTime();                
+    
+    paragraphNumber = findParagraphNumber(timeNow);
+
+    console.log("paragraphNumber = " + paragraphNumber);
+  }
+
+  // Highlight paragraph
+
+
+  // Scroll Text to id
+  var scrollToDestination = "#" + paragraphsIDs[paragraphNumber-1];
+
+  console.log("scrollToDestination = " + scrollToDestination);
+
+  $('#transcription').scrollTo(scrollToDestination);
+
+
+}
+
+// FIND THE CORRECT SLIDE NUMBER IN TIMELINE
+function findParagraphNumber(timeNow)
+{
+    var notFoundYet = true;
+    var i = 0;
+    var paragraphNo = 0;
+    var paragraphsLength = paragraphsInPoints.length;
+    
+    while(notFoundYet && i < paragraphsLength)
+    {
+      if(timeNow < paragraphsInPoints[i+1])
+      {
+        paragraphNo = i+1;
+        notFoundYet = false;
+      }
+      i++;
+    }
+    
+    if(timeNow > paragraphsInPoints[paragraphsLength-1])
+    {
+      paragraphNo = paragraphsLength-1;
+    }
+
+    return paragraphNo;
 }
 
 
-
+// var paragraphsInPoints = [];
+// var paragraphsIDs = [];
+// var paragraphNumber = 1;
+// var previousParagraphNumber = 1;
 
 
 
