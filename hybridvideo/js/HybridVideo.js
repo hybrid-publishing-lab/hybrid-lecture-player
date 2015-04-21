@@ -623,11 +623,86 @@ function findParagraphNumber(timeNow)
 }
 
 
-// var paragraphsInPoints = [];
-// var paragraphsIDs = [];
-// var paragraphNumber = 1;
-// var previousParagraphNumber = 1;
+function changeLanguage(index)
+{
+  console.log("changeLanguage");
+
+  switch(index)
+  {
+    case 1:
+      console.log("English");
+      loadEnglish();
+      break;
+
+    case 2:
+      console.log("French");
+      loadFrench();
+      break;
+
+    case 3:
+      console.log("German");
+      loadGerman();
+      break;
+
+    default:
+      break;
+  }
+}
+
+function loadEnglish()
+{
+  $.ajax({
+    type: "GET",
+    url: "data/captions.xml",
+    dataType: "xml",
+    success: parseLanguageCaptions
+  });
+
+}
 
 
+function loadFrench()
+{
+  $.ajax({
+    type: "GET",
+    url: "data/captions-F.xml",
+    dataType: "xml",
+    success: parseLanguageCaptions
+  });
+  
+}
 
+function loadGerman()
+{
+  $.ajax({
+    type: "GET",
+    url: "data/captions-D.xml",
+    dataType: "xml",
+    success: parseLanguageCaptions
+  });
+}
 
+function parseLanguageCaptions(document){
+    
+    var i = 0;
+
+    $(document).find("p").each(function(){
+
+        var timecode = $(this).attr('begin');
+        var seconds = convertTimeCodeToSeconds(timecode);
+        var name = $(this).text();
+
+        captionsInPoints[i] = seconds;
+        captionsText[i] = name;
+
+        i += 1;
+
+    });
+
+    changeCaption();    
+  }
+
+  function changeCaption()
+  {
+    document.getElementById("transcription-line").innerHTML = captionsText[captionNumber-1];
+  }

@@ -126,11 +126,11 @@
                    <button type="button" onclick="makeCitation()">MAKE CITATION URL LINK</button>
                 </div>
                 <div id="language-button">
-                  <select name='language'>
+                  <select name='language' onchange="if (this.selectedIndex) changeLanguage(this.selectedIndex);">
                       <option class='head'>Language</option>
-                      <option value='Action 1'>English</option>
-                      <option value='Action 2'>French</option>
-                      <option value='Action 3'>German</option>
+                      <option value='1' selected="selected">English</option>
+                      <option value='2'>French</option>
+                      <option value='3'>German</option>
                   </select>
               </div>
             </div>
