@@ -658,6 +658,7 @@ function loadEnglish()
     success: parseLanguageCaptions
   });
 
+  $("#transcription").load("html/transcription.html");
 }
 
 
@@ -670,6 +671,7 @@ function loadFrench()
     success: parseLanguageCaptions
   });
   
+  $("#transcription").load("html/transcription-F.html");
 }
 
 function loadGerman()
@@ -680,6 +682,8 @@ function loadGerman()
     dataType: "xml",
     success: parseLanguageCaptions
   });
+
+  $("#transcription").load("html/transcription-D.html");
 }
 
 function parseLanguageCaptions(document){
