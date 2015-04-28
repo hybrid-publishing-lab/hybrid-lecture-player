@@ -32,9 +32,19 @@
                 <div class="title-HLP">HYBRID LECTURE PLAYER</div>
                 <div class="title-lecture">Finally Getting the Message: McLuhan’s Media Practice</div>
             </div>
+            
             <div id="chapters">
+                
+                
+                
+                 <!-- TABS CONTAINER -->
 
-                <div class="chapter-title" onclick="goToChapter(85)" onmouseover="changePrecisContent(1)" onmouseleave="changePrecisContent(0)">
+                <div class="tabs">
+    <div class="tab">
+        <input type="radio" id="tab-1" name="tab-group-1" checked>
+        <label for="tab-1">SECTIONS</label>
+        <div class="content">
+            <div class="chapter-title" onclick="goToChapter(85)" onmouseover="changePrecisContent(1)" onmouseleave="changePrecisContent(0)">
                   <span class="play-button">►</span> Intro
                 </div>
 
@@ -69,8 +79,13 @@
                 <div class="chapter-title" onclick="goToChapter(4460)" onmouseover="changePrecisContent(9)" onmouseleave="changePrecisContent(0)">
                   <span class="play-button">►</span> THE FREEWHEELIN’ McLUHAN
                 </div>
-
-                <!-- Publications -->
+        </div>
+    </div>
+    <div class="tab">
+        <input type="radio" id="tab-2" name="tab-group-1">
+        <label for="tab-2">PUBLICATIONS</label>
+        <div class="content">
+            <!-- Publications -->
                 <div class="chapter-title publication" onclick="goToChapter(2275)" onmouseover="changePrecisContent(10)" onmouseleave="changePrecisContent(0)">
                   <span class="play-button">►</span> Mechanical Bride
                 </div>
@@ -90,6 +105,20 @@
                 <div class="chapter-title publication" onclick="goToChapter(2921)" onmouseover="changePrecisContent(14)" onmouseleave="changePrecisContent(0)">
                   <span class="play-button">►</span> Explorations
                 </div>
+        </div>
+    </div>
+    <div class="tab">
+        <input type="radio" id="tab-3" name="tab-group-1">
+        <label for="tab-3">VIDEOS</label>
+        <div class="content">
+            
+        </div>
+    </div>
+</div>
+</div><!-- END TABS CONTAINER -->
+                
+
+                
             </div>
             <div id="precis">
               <!--Chapter precis text goes here, not too much longer than this text: just enough to give a quick idea of the contents.-->
@@ -144,7 +173,7 @@
         <div id="transcription-container">
           <div id="transcription-button">
             <button type="button" onclick="synchronizeTranscription()">SYNCHRONIZE TRANSCRIPTION</button>
-            <a href="javascript:window.print()"><button id="download-pdf" type="button">DOWNLOAD PDF</button></a>
+            <a href="javascript:window.print()" target="_self"><button id="download-pdf" type="button">DOWNLOAD PDF</button></a>
           </div>
           <div id="transcription">
           </div>

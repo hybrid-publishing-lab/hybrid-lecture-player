@@ -72,6 +72,46 @@ img {
 	color: black;
 	text-transform: uppercase;
 }
+
+/* TABS */
+.tabs {
+    position: relative;
+    height: 150px;
+    clear: both;
+    margin: 25px 0px 0px;
+    background: rgb(240, 20, 50);
+}
+.tabs .content {
+  position: absolute;
+  top: 0px;
+  left: -15px;
+  background: rgb(240, 20, 50);
+  right: 0;
+  bottom: 0;
+  padding: 12px;
+
+}
+.tab {
+    float: left;
+}
+.tab label {
+    padding: 20px;
+    margin-left: 0px;
+    position: relative;
+    left: 1px;
+    top: -25px;
+}
+.tab[type=radio] {
+    display: none;
+}
+
+[type=radio]:checked ~ label {
+    background: white;
+}
+[type=radio]:checked ~ label ~ .content {
+    z-index: 1;
+}
+
 #chapters {
 	width: 70%;
 	float: left;
@@ -331,3 +371,33 @@ option.head {
 	}
 }
 
+
+@media print {
+    #header, #left-column, #right-column, #xtra, #footer {
+		display: none;
+	}
+	body, article, #content {
+		height: auto;
+		font-size: 14px;
+		line-height: 18px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	#transcription-container {
+		float: none;
+		width: 85%;
+		margin-left:15%;
+		height: initial;
+	}
+	#transcription-button {
+		display: none;
+	}
+	#transcription {
+		height: auto;
+		overflow-y: visible;
+		display: inline;
+		background-color: transparent;
+		color: black;
+	}
+}
