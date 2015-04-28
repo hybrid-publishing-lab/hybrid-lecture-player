@@ -496,7 +496,7 @@ function changePrecisContent(chapterNumber)
 
     // Intro With Steve Kovats
     case 1:
-        document.getElementById("precis").innerHTML = "Stephen Kovats provides the context in which the lecture takes places and introduces Graham";
+        document.getElementById("precis").innerHTML = "Stephen Kovats provides the context in which the lecture takes places and introduces Graham Larkin";
         break;
 
     // Finally Getting the Message: McLuhan's Media Practice
@@ -516,27 +516,27 @@ function changePrecisContent(chapterNumber)
 
     // Viewing, Listening/Watching
     case 5:
-        document.getElementById("precis").innerHTML = "surveys the very detailed evidence for McLuhan&rsquo;s youthful involvement with radio and cinema";
+        document.getElementById("precis").innerHTML = "Surveys the very detailed evidence for McLuhan&rsquo;s youthful involvement with radio and cinema";
         break;
 
     // Being a Character
     case 6:
-        document.getElementById("precis").innerHTML = "surveys some fresh evidence for McLuhan&rsquo;s interests in rhetoric, including public speaking";
+        document.getElementById("precis").innerHTML = "Surveys some fresh evidence for McLuhan&rsquo;s interests in rhetoric, including public speaking";
         break;
 
     // Research Publishing
     case 7:
-        document.getElementById("precis").innerHTML = "examines material aspects of McLuhan&rsquo;s scholarly writing, including manuscripts and typescripts for his major publications";
+        document.getElementById("precis").innerHTML = "Examines material aspects of McLuhan&rsquo;s scholarly writing, including manuscripts and typescripts for his major publications";
         break;
 
     // Blow Up
     case 8:
-        document.getElementById("precis").innerHTML = "charts McLuhan’s media image throughout the long 1960s";
+        document.getElementById("precis").innerHTML = "Charts McLuhan’s media image throughout the long 1960s";
         break;
 
     // Epilogue: The Freewheeling Marshall McLuhan
     case 9:
-        document.getElementById("precis").innerHTML = "compares McLuhan&rsquo;s media persona to Bob Dylan and other performers exhibiting an improvisatory, devil-may-care attitude";
+        document.getElementById("precis").innerHTML = "Compares McLuhan&rsquo;s media persona to Bob Dylan and other performers exhibiting an improvisatory, devil-may-care attitude";
         break;
 
     // PUBLICATIONS
