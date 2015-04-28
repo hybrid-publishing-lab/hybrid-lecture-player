@@ -278,6 +278,7 @@ option.head {
 	padding: 10px 6px 5px 15px;
 	height: 300px;
 	border-top: 8px solid white;
+	float: left;
 }
 #xtra iframe {
 	width:100%;
