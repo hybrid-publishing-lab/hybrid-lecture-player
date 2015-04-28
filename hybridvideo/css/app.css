@@ -280,6 +280,11 @@ option.head {
 	border-top: 8px solid white;
 	float: left;
 }
+#xtra a, #xtra a:visited, #xtra a:hover {
+	color: white;
+	text-decoration: none;
+	border-bottom: 2px solid white;
+}
 #xtra iframe {
 	width:100%;
 	height:100%;
