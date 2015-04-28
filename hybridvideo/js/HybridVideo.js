@@ -487,7 +487,7 @@ function changePrecisContent(chapterNumber)
   switch(chapterNumber)
   {
     case 0:
-        document.getElementById("precis").innerHTML = "Section descriptions.";
+        document.getElementById("precis").innerHTML = " ";
         break;
 
     // Intro With Steve Kovats
