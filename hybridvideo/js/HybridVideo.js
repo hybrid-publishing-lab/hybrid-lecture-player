@@ -552,7 +552,7 @@ function changePrecisContent(chapterNumber)
 
     // Understanding Media & The Medium is the Message
     case 12:
-        document.getElementById("precis").innerHTML = "";
+        document.getElementById("precis").innerHTML = "Collaboration with the publisher impresario Quentin Fiori on the book The Medium is the Massage in multiple formats; book, LP and as Aspen 4 magazine";
         break;
 
     // The McLuhan DEW-Line
