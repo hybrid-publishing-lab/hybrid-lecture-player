@@ -386,6 +386,10 @@ function onYouTubeIframeAPIReady() {
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
+    },
+    playerVars: {
+         'showinfo' : 0,
+         'autohide': 1
     }
   });
 }
