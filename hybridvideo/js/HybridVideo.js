@@ -47,7 +47,14 @@ $(document).ready(function()
     dataType: "xml",
     success: parseParagraphs
   });
-
+  
+  $( ".credits" ).click(function() {
+    $( "#footer_slide" ).slideToggle( "slow");
+    $('html, body').animate({
+        scrollTop: $("#footer_slide").offset().top + $('window').height()
+    }, 2000);
+    $( this ).toggleClass( "slide_up" );
+    });
 });
 
 function getQueryVariable(variable)

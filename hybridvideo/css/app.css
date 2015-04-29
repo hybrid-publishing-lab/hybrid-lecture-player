@@ -20,7 +20,11 @@ body {
 	line-height: 24px;
 	letter-spacing: 1px;
 }
-
+a, a:visited, a:hover, a:focus {
+	text-decoration: none;
+	color: black;
+	border-bottom: 2px solid white;
+}
 h3 {
 	font-size: 24px;
 	text-transform: uppercase;
@@ -78,7 +82,7 @@ img {
     position: relative;
     height: 150px;
     clear: both;
-    margin: 25px 0px 0px;
+    margin: 27px 0px 0px;
     background: rgb(240, 20, 50);
 }
 .tabs .content {
@@ -228,8 +232,9 @@ article {
     background-color: rgb(240, 20, 50);
     color: white;
     border: 0;
+	height: 3vw;
 	width: 100%;
-	font-size: 60%;
+	font-size: 0.8vw;
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
@@ -247,13 +252,18 @@ article {
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
+	height: 1.5vw;
 	width: 100%;
-	font-size: 60%;
+	font-size: 0.8vw;
+	padding: 1% 5%;
 	text-transform: uppercase;
 	-webkit-appearance: none;
    	-moz-appearance: none;
    	appearance: none;
 	background-color: white;
+	-moz-border-radius: 0px;
+	border-radius: 0px;
+	
 }
 #language-button select:active, #language-button select:focus {
 	outline: 0;
@@ -334,12 +344,29 @@ option.head {
 	float: left;
 	width: 100%;
 	height: 100px;
-	padding: 20px;
 	clear: both;
 	background-color: rgb(45, 53, 116);
 	border-top: 8px solid white;
+	color: white;
 }
-
+#footer a, #footer a:visited, #footer a:hover {
+	color: white;
+}
+.credits {
+	padding: 20px;
+	background-color: rgb(45, 53, 116);
+}
+#footer_slide a, #footer_slide a:visited, #footer_slide a:hover {
+	color: black;
+	border-bottom: 2px solid black;
+}
+#footer_slide {
+    display: none;
+	width: 100%;
+	color: black;
+	padding: 20px;
+	background-color: white;
+}
 
 @media (min-width:250px) and (max-width:540px) {
 	#left-column{
@@ -368,6 +395,9 @@ option.head {
 	}
 	h3 {
 		font-size: 20px;
+	}
+	#xtra {
+		display: none;
 	}
 }
 
