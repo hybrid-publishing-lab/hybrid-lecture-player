@@ -480,7 +480,7 @@ function goToSentence(e)
 // Make Citation
 function makeCitation()
 {
-  var text = "http://mcluhan.gibraltarwalk.com/hybridvideo/index.html?s=" + Math.round(player.getCurrentTime());
+  var text = "https://mcluhan.consortium.io/hybridlecture/index.html?s=" + Math.round(player.getCurrentTime());
   window.prompt("Copy to clipboard: PC: Ctrl+C, Enter - OSX Cmd+C, Enter", text);
 }
 
