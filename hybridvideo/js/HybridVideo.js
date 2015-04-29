@@ -158,40 +158,67 @@ function checkAndChangeSlideAndText()
   {
     var timeNow = player.getCurrentTime();                
     
-    // Check If We Need to Change Slides
-    if(timeNow >= slideInPoints[slideNumber])
+    // If position has advanced beyond the next slide
+    if(timeNow >= slideInPoints[slideNumber + 1])
     {
-      var slideSource = 'images/' + slideNames[slideNumber];
+      console.log("checkAndChangeSlideAndText()");
+      console.log("timeNow = " + timeNow);
+
+      // SLIDE UPDATE
+      slideNumber = findSlideNumber(timeNow);
+
+      var slideSource = 'images/' + slideNames[slideNumber-1];
       document.getElementById("img").src = slideSource;
 
-      slideNumber += 1;
-    }
-
-    // Check If We Need to Change Captions
-    if(timeNow >= captionsInPoints[captionNumber-1])
-    {
+      // CAPTION UPDATE
+      captionNumber = findCaptionNumber(timeNow);
 
       document.getElementById("transcription-line").innerHTML = captionsText[captionNumber-1];
 
-      captionNumber += 1;
-
-      addActiveClassToTranscript(captionNumber-1);
-
-      removeActiveClassToTranscript(previousCaptionNumber-1);
-
-      previousCaptionNumber = captionNumber;
-    }
-
-
-    // Check If We Need to Change Contextual Html
-    if(timeNow >= contextualHtmlInPoints[contextualHtmlNumber-1])
-    {
+      // CONTEXTUAL HTML UPDATE
+      contextualHtmlNumber = findContextualHtmlNumber(timeNow);
 
       document.getElementById("xtra").innerHTML = contextualHtml[contextualHtmlNumber-1];
 
-      contextualHtmlNumber += 1;
+    }
+    else
+    // Check if we have moved to the next slide
+    {
+      // Check If We Need to Change Slides
+      if(timeNow >= slideInPoints[slideNumber])
+      {
+        var slideSource = 'images/' + slideNames[slideNumber];
+        document.getElementById("img").src = slideSource;
 
-      previouscontextualHtmlNumber = contextualHtmlNumber;
+        slideNumber += 1;
+      }
+
+      // Check If We Need to Change Captions
+      if(timeNow >= captionsInPoints[captionNumber-1])
+      {
+
+        document.getElementById("transcription-line").innerHTML = captionsText[captionNumber-1];
+
+        captionNumber += 1;
+
+        addActiveClassToTranscript(captionNumber-1);
+
+        removeActiveClassToTranscript(previousCaptionNumber-1);
+
+        previousCaptionNumber = captionNumber;
+      }
+
+
+      // Check If We Need to Change Contextual Html
+      if(timeNow >= contextualHtmlInPoints[contextualHtmlNumber-1])
+      {
+
+        document.getElementById("xtra").innerHTML = contextualHtml[contextualHtmlNumber-1];
+
+        contextualHtmlNumber += 1;
+
+        previouscontextualHtmlNumber = contextualHtmlNumber;
+      }
     }
 
   }
@@ -354,17 +381,6 @@ function convertTimeCodeToSeconds(timeString)
   return totalTime;
 }
 
-// var xml = $.parseXML('data/captions.xml');
-// var $xml = $( xml );
-// var $test = $xml.find('captions');
-
-// console.log($test);
-  // Output:
-  // The Reddest
-  // The Hairiest
-  // The Tallest
-  // The Fattest
-
 
 // 2. This code loads the IFrame Player API code asynchronously.
 var tag = document.createElement('script');
@@ -377,7 +393,7 @@ firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
 //    after the API code downloads.
 var player;
 function onYouTubeIframeAPIReady() {
-  console.log('onYouTubeIframeAPIReady');
+  //console.log('onYouTubeIframeAPIReady');
 
   player = new YT.Player('player', {
     height: '390',
@@ -419,6 +435,9 @@ function onPlayerStateChange(event) {
   }
 
   var timeNow = player.getCurrentTime();
+
+  console.log("function onPlayerStateChange(event) {");
+  console.log("timeNow = " + timeNow);
 
   // SLIDE UPDATE
   slideNumber = findSlideNumber(timeNow);
@@ -573,8 +592,6 @@ function changePrecisContent(chapterNumber)
 
 function synchronizeTranscription()
 {
-  console.log("synchronizeTranscription");
-
   // Find paragraph number
   var paragraphNumber;
 
@@ -583,8 +600,6 @@ function synchronizeTranscription()
     var timeNow = player.getCurrentTime();                
     
     paragraphNumber = findParagraphNumber(timeNow);
-
-    console.log("paragraphNumber = " + paragraphNumber);
   }
 
   // Highlight paragraph
@@ -592,8 +607,6 @@ function synchronizeTranscription()
 
   // Scroll Text to id
   var scrollToDestination = "#" + paragraphsIDs[paragraphNumber-1];
-
-  console.log("scrollToDestination = " + scrollToDestination);
 
   $('#transcription').scrollTo(scrollToDestination);
 
@@ -629,22 +642,17 @@ function findParagraphNumber(timeNow)
 
 function changeLanguage(index)
 {
-  console.log("changeLanguage");
-
   switch(index)
   {
     case 1:
-      console.log("English");
       loadEnglish();
       break;
 
     case 2:
-      console.log("French");
       loadFrench();
       break;
 
     case 3:
-      console.log("German");
       loadGerman();
       break;
 
