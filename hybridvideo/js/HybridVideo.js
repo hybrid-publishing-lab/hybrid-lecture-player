@@ -573,7 +573,7 @@ function changePrecisContent(chapterNumber)
 
     // Counterblast
     case 11:
-        document.getElementById("precis").innerHTML = "More a manifesto than a book, Counterblast is a typographically explosive compilation of short essays and probes (complex ideas compressed into a few thought-provoking words), all of which focus on the effects of media on the human condition";
+        document.getElementById("precis").innerHTML = "More a manifesto than a book, Counterblast is a typographically explosive compilation which focus on the effects of media on the human condition";
         break;
 
     // Understanding Media & The Medium is the Message
