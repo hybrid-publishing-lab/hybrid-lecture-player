@@ -517,7 +517,7 @@ function changePrecisContent(chapterNumber)
   switch(chapterNumber)
   {
     case 0:
-        document.getElementById("precis").innerHTML = " ";
+        document.getElementById("precis").innerHTML = "Finally Getting the Message: McLuhan's Media Practice. A lecture by Graham Larkin, given at the McLuhan Salon, Canadian Embassy, Berlin, in 2011";
         break;
 
     // Intro With Steve Kovats
