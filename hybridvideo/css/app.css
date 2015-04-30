@@ -179,8 +179,10 @@ article {
 	border:0;
 }
 #slide-container img {
-	width: 100%;
+	max-width: 100%;
 	max-height: 40vw;
+	display: block;
+	margin: auto;
 }
 /* VIDEO */
 #right-column {
@@ -234,7 +236,7 @@ article {
     border: 0;
 	height: 3vw;
 	width: 100%;
-	font-size: 0.8vw;
+	font-size: 0.9vw;
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
@@ -243,7 +245,7 @@ article {
     transition-duration: 0;
 }
 #language-button {
-	margin-top: 3%;
+	margin-top: 1%;
 	float: left;
 	width: 15%;
 }
@@ -254,7 +256,7 @@ article {
     box-shadow: 0;
 	height: 1.5vw;
 	width: 100%;
-	font-size: 0.8vw;
+	font-size: 0.9vw;
 	padding: 1% 5%;
 	text-transform: uppercase;
 	-webkit-appearance: none;
@@ -263,7 +265,6 @@ article {
 	background-color: white;
 	-moz-border-radius: 0px;
 	border-radius: 0px;
-	
 }
 #language-button select:active, #language-button select:focus {
 	outline: 0;
@@ -329,6 +330,7 @@ option.head {
 	height: 300px;
 	border-top: 8px solid white;
 	float: left;
+	background-color: black;
 }
 #xtra a, #xtra a:visited, #xtra a:hover {
 	color: white;
@@ -368,8 +370,97 @@ option.head {
 	background-color: white;
 }
 
+@media (min-width:540px) and (max-width:940px) {
+	body {
+		font-size: 16px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	#left-column {
+		height:55vw;
+	}
+	#right-column {
+		height:55vw;
+	}
+	#transcription-line {
+		float: left;
+		width: 100%;
+		height: 120px;
+		font-size: 12px;    /* old */
+		font-size: 2vm;   /* IE9 */
+		font-size: 2vw;
+		line-height: 115%;
+		padding: 15px;
+		text-align: left;
+		color: white;
+	}
+	#citation-button {
+		width: auto;
+		margin-top: 17px;
+		margin-left: 5%;
+	}
+	#citation-button button {
+		margin-bottom: 17px;
+		width: 80px;
+		height: 40px;
+		font-size: 12px;
+	}
+	#language-button {
+		margin: 2% 5%;
+		float: left;
+		width: 80px;
+		margin-top: 17px;
+	}
+	#language-button select {
+		height: 40px;
+		width: 100%;
+		font-size: 12px;
+		padding: 6px;
+	}
+	#transcription-button button {
+		padding: 5px;
+		font-size: 12px;
+	}
+}
+
 @media (min-width:250px) and (max-width:540px) {
-	#left-column{
+	body {
+		font-size: 16px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	#chapters {
+		display: none;
+	}
+	#precis {
+		display: none;
+	}
+	#citation-button {
+		width: auto;
+		margin-top: 17px;
+		margin-left: 5%;
+	}
+	#citation-button button {
+		margin-bottom: 17px;
+		width: 80px;
+		height: 40px;
+		font-size: 12px;
+	}
+	#language-button {
+		margin: 2% 5%;
+		float: left;
+		width: 80px;
+		margin-top: 17px;
+	}
+	#language-button select {
+		height: 40px;
+		width: 100%;
+		font-size: 12px;
+		padding: 6px;
+	}
+	#left-column {
 		width: 100%;
 		float: none;
 		border:0;
@@ -387,38 +478,65 @@ option.head {
 		height: 70px;
 		font-size: 4.7vw;
 	}
-	#transcription {
+	#transcription-container {
 		width: 100%;
 	}
-	body {
-		font-size: 16px;
+	#transcription-button {
+		margin: 2% 5%;
 	}
-	h3 {
-		font-size: 20px;
+	#transcription-button button {
+		padding: 5px;
+		font-size: 12px;
 	}
 	#xtra {
 		display: none;
 	}
 }
 
-
-@media print {
-    #header, #left-column, #right-column, #xtra, #footer {
+@media screen {
+	.print-only {
 		display: none;
 	}
-	body, article, #content {
+}
+
+@media print {
+    header, nav, #left-column, #right-column, #transcription-button, #xtra, #footer {
+		display: none;
+	}
+	html, body, article, #content {
 		height: auto;
 		font-size: 14px;
 		line-height: 18px;
+		background-color: transparent;
 	}
 	h3 {
 		font-size: 20px;
 	}
+	#content {
+		background-color: transparent;
+		width: 100%;
+		padding: 0px;
+		border-top: 8px solid white;
+		display: inline-block;
+		margin-bottom: -7px;
+	}
 	#transcription-container {
 		float: none;
-		width: 85%;
-		margin-left:15%;
+		width: 75%;
+		margin-left: 7%;
 		height: initial;
+	}
+	.title-lecture-print {
+		margin-left: 7%;
+		margin-top: 7%;
+		font-size: 20px;
+	}
+	#transcription-container img {
+		width: 500px;
+		margin: 30px 0px;
+		-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+        page-break-inside: avoid; /* Firefox */
+        break-inside: avoid; /* IE 10+ */
 	}
 	#transcription-button {
 		display: none;
@@ -430,4 +548,19 @@ option.head {
 		background-color: transparent;
 		color: black;
 	}
+	#transcription span.active {
+		border-bottom: 0px;
+	}
+	#transcription span:hover {
+		color: black;
+	}
+	.no-page-break {
+		-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
+          page-break-inside: avoid; /* Firefox */
+               break-inside: avoid; /* IE 10+ */
+	}
+	
+}
+@page {
+margin: 0.5cm;
 }
