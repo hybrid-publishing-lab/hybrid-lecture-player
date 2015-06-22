@@ -168,8 +168,10 @@ function checkAndChangeSlideAndText()
     // If position has advanced beyond the next slide
     if(timeNow >= slideInPoints[slideNumber + 1])
     {
-      console.log("checkAndChangeSlideAndText()");
-      console.log("timeNow = " + timeNow);
+      // console.log("slideNumber = " + slideNumber);
+      // console.log("slideInPoints[slideNumber + 1] = " + slideInPoints[slideNumber + 1]);
+      // console.log("checkAndChangeSlideAndText()");
+      // console.log("timeNow = " + timeNow);
 
       // SLIDE UPDATE
       slideNumber = findSlideNumber(timeNow);
@@ -209,6 +211,7 @@ function checkAndChangeSlideAndText()
         captionNumber += 1;
 
         addActiveClassToTranscript(captionNumber-1);
+        console.log("addActiveClassToTranscript(captionNumber-1);");
 
         removeActiveClassToTranscript(previousCaptionNumber-1);
 
@@ -258,7 +261,7 @@ function addActiveClassToTranscript(captionNumber)
     captionID = "#lineID" + captionNumber;
   }
 
-  $('#foo').addClass('class_two');
+  //$('#foo').addClass('class_two');
 
   $(captionID).addClass("active");
 
