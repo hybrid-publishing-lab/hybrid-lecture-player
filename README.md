@@ -28,10 +28,11 @@ line starting 408 in HybridVideo.js
     		}
   	});
 
+</pre>
 	Change
 
 	videoId: 'z-WG3biOXto', 
-</pre>
+
 	to the correct YouTube video id.
 
 
