@@ -1,9 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<tt xml:lang="en" xmlns="http://www.w3.org/2006/10/ttaf1" xmlns:tts="http://www.w3.org/2006/10/ttaf1#style">
-	<head>
-	</head>
-	<body>
-		<div xml:id="captions">
+<tt xmlns="http://www.w3.org/ns/ttml" xmlns:tts="http://www.w3.org/ns/ttml#styling" xml:lang="en">
+    <head>
+        <metadata xmlns:ttm="http://www.w3.org/ns/ttml#metadata">
+            <ttm:title/>
+            <ttm:description/>
+            <ttm:copyright/>
+        </metadata>
+        <styling>
+            <style xml:id="amara-style" tts:color="white" tts:fontFamily="proportionalSansSerif" tts:fontSize="18px" tts:backgroundColor="transparent" tts:textOutline="black 1px 0px" tts:textAlign="center"/>
+        </styling>
+        <layout>
+            <region xml:id="bottom" style="amara-style" tts:extent="100% 20%" tts:origin="0 80%"/>
+            <region xml:id="top" style="amara-style" tts:extent="100% 20%" tts:origin="0 0" tts:textAlign="center"/>
+        </layout>
+    </head>
+    <body region="bottom">
+        <div>
             <p begin="00:00:37.564" end="00:00:37.946">Do you want to say something</p>
             <p begin="00:00:43.025" end="00:00:44.232">Right behind me, hey</p>
             <p begin="00:00:45.566" end="00:00:49.355">The dirt</p>
@@ -36,6 +47,6 @@
             <p begin="00:02:14.005" end="00:02:18.341">Into this spot</p>
             <p begin="00:02:18.341" end="00:02:20.178">So I won't say I'm glad to be here,</p>
             <p begin="00:02:20.178" end="00:02:24.059">but I'm glad to be with you.</p>
-		</div>
-	</body>
+        </div>
+    </body>
 </tt>
