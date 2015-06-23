@@ -3,6 +3,7 @@
 	<head></head>
 	<body>
 		<div xml:id="captions">
+            <p begin="00:00:00.000" end="00:00:37.563">Subtitles will start at 00:37</p>
             <p begin="00:00:37.564" end="00:00:37.946">Do you want to say something</p>
             <p begin="00:00:43.025" end="00:00:44.232">Right behind me, hey</p>
             <p begin="00:00:45.566" end="00:00:49.355">The dirt</p>
@@ -35,6 +36,7 @@
             <p begin="00:02:14.005" end="00:02:18.341">Into this spot</p>
             <p begin="00:02:18.341" end="00:02:20.178">So I won't say I'm glad to be here,</p>
             <p begin="00:02:20.178" end="00:02:24.059">but I'm glad to be with you.</p>
+            <p begin="00:02:24.060" end="00:08:00.000">Subtitles ended.</p>
 		</div>
 	</body>
 </tt>
