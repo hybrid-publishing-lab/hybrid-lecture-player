@@ -13,7 +13,7 @@ Make sure you delete the extra <div></div> s that are added by Amara (for some r
 
 2. Adding a new video to a new instance of the player
 line starting 408 in HybridVideo.js
-
+<pre>
 	player = new YT.Player('player', {
     		height: '390',
     		width: '640',
@@ -31,7 +31,7 @@ line starting 408 in HybridVideo.js
 	Change
 
 	videoId: 'z-WG3biOXto', 
-
+</pre>
 	to the correct YouTube video id.
 
 
