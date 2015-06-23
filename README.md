@@ -13,6 +13,7 @@ Make sure you delete the extra <div></div> s that are added by Amara (for some r
 
 2. Adding a new video to a new instance of the player
 line starting 408 in HybridVideo.js
+
 <pre>
 	player = new YT.Player('player', {
     		height: '390',
@@ -27,14 +28,11 @@ line starting 408 in HybridVideo.js
          	'autohide': 1
     		}
   	});
-
 </pre>
+
 	Change
-
 	videoId: 'z-WG3biOXto', 
-
 	to the correct YouTube video id.
-
 
 3. Slide In Points
 Edit the file 'data/SlideInPoints.xml' to change the inpoints of the slides. Make sure the inpoints are sequential and in the correct format e.g. '00:00:00.000', '00:00:05.500' etc... . If they are not then this will cause problems.
