@@ -1,7 +1,37 @@
 # bubbles
 Vanilla instance of the Hybrid Lecture Player
-# Instructions
-Hybrid Player Instructions
+
+
+# The Hybrid Lecture Player
+
+The Hybrid Lecture player is a platform that allows you to turn your lecture documentation into a multi-format publication tool with features such as subtitle transcription, transcription in prose form, translations, and embedded lecture material such as images, audio and visual files. Everything is synched and information can be accessed via multiple channels, through custom tables of contents and sections.
+
+Here is a map of the features that the Hybrid Lecture Player proposes:
+
+![The Hybrid Lecture Player](http://hpg.io/img/HLP-white.png)
+
+## This repository contains the following folders and files
+
+    .
+    ├── css                                   ==> 
+    │   └── app.css                           style of the Hybrid Lecture Player
+    ├── data                                  ==> 
+    │   ├── captions.xml                      file where the captions are encoded
+    │   ├── captions-LanguageCode.xml         captions in various languages
+    │   ├── ContextualHtml.xml                file where the additional materials are encoded (bottom-right box)
+    │   ├── paragraphs.xml                    synchronization of the paragraphs and the video’s timeline
+    │   └── SlidesInPoints.xml                synchronization of the slides and the video’s timeline
+    ├── html                                  ==> 
+    │   ├── transcription.html                file where the transcription is encoded
+    │   └── transcription-LanguageCode.html   transcription in various languages
+    ├── images                                ==> slides
+    │   └── …
+    ├── index.html                            the structure of the Hybrid Lecture Player’s page
+    ├── js                                    ==> 
+        ├── HybridVideo.js                    the heart of the Player!
+        └── scrollTo                          …
+
+# Using the Hybrid Lecture Player
 
 When editing the .xml the structure of the data should be kept the same, all tags should retain their attributes.
 
