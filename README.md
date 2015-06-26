@@ -27,9 +27,17 @@ Here is a map of the features that the Hybrid Lecture Player proposes:
     ├── images                                ==> slides
     │   └── …
     ├── index.html                            the structure of the Hybrid Lecture Player’s page
-    ├── js                                    ==> 
+    └── js                                    ==> 
         ├── HybridVideo.js                    the heart of the Player!
-        └── scrollTo                          …
+        └── scrollTo                          instructions for automatomtic scrolling in the text
+
+
+You can download this repository and start using it on your computer, opening the file index.html in your favorite browser to see a local preview of the Hybrid Lecture Player. We recommend the use of Firefox, as the preview doesn’t work well in all browsers.
+
+To produce the subtitles, we use the open source subtitle editor Amara http://www.amara.org/fr/.
+
+The rest is simply html and javascript!
+
 
 # Using the Hybrid Lecture Player
 
