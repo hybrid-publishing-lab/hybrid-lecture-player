@@ -12,24 +12,25 @@ Here is a map of the features that the Hybrid Lecture Player proposes:
 
 ## This repository contains the following folders and files
 
-    .
-    ├── css                                   ==> 
+    
+    ├── css                                   ==> style folder
     │   └── app.css                           style of the Hybrid Lecture Player
-    ├── data                                  ==> 
+    ├── data                                  ==> captions, slides and synchronization folder
     │   ├── captions.xml                      file where the captions are encoded
     │   ├── captions-LanguageCode.xml         captions in various languages
-    │   ├── ContextualHtml.xml                file where the additional materials are encoded (bottom-right box)
+    │   ├── ContextualHtml.xml                file where the additional materials are encoded 
+    │   │                                     (bottom-right box)
     │   ├── paragraphs.xml                    synchronization of the paragraphs and the video’s timeline
     │   └── SlidesInPoints.xml                synchronization of the slides and the video’s timeline
-    ├── html                                  ==> 
+    ├── html                                  ==> transcriptions folder
     │   ├── transcription.html                file where the transcription is encoded
     │   └── transcription-LanguageCode.html   transcription in various languages
-    ├── images                                ==> slides
+    ├── images                                ==> slides folder
     │   └── …
     ├── index.html                            the structure of the Hybrid Lecture Player’s page
-    └── js                                    ==> 
-        ├── HybridVideo.js                    the heart of the Player!
-        └── scrollTo                          instructions for automatomtic scrolling in the text
+    └── js                                    ==> javascript folder
+        ├── HybridVideo.js                    the heart of the Player: synchronization scripts
+        └── scrollTo                          automatic scrolling in the transcription
 
 
 You can download this repository and start using it on your computer, opening the file index.html in your favorite browser to see a local preview of the Hybrid Lecture Player. We recommend the use of Firefox, as the preview doesn’t work well in all browsers.
@@ -43,43 +44,52 @@ For the moment, we use Youtube for the video part of the Hybrid Lecture Player. 
 
 # Using the Hybrid Lecture Player
 
-When editing the .xml the structure of the data should be kept the same, all tags should retain their attributes.
+## embedding a video
 
-1. Exporting subtitles from Amara to create captions 'Captions.xml'
-Form Amara export the subtitles as .dxfp
-Copy all the <p> tags inside <body region="bottom"><div>
-Paste these into 'data/Captions.xml' inside the <div xml:id="captions"></div> tag
-Make sure you delete the extra <div></div> s that are added by Amara (for some reason it is dividing the <p> s into sections
+In the folder `js`, find the `HybridVideo.js` file and open it in your favourite text editor.
 
-2. Adding a new video to a new instance of the player
-line starting 408 in HybridVideo.js
+In the part starting on line 408 in `HybridVideo.js`, line 411 indicates the id of the Youtube video. The id of a youtube video is visible at the end of its url. For instance: https://www.youtube.com/watch?v=z-WG3biOXto
 
-<pre>
-	player = new YT.Player('player', {
-    		height: '390',
-    		width: '640',
-    		videoId: 'z-WG3biOXto',
-    		events: {
-      			'onReady': onPlayerReady,
-      			'onStateChange': onPlayerStateChange
-    		},
-    		playerVars: {
-         	'showinfo' : 0,
-         	'autohide': 1
-    		}
-  	});
-</pre>
+    player = new YT.Player('player', {
+        height: '390',
+        width: '640',
+        videoId: 'z-WG3biOXto',
+        events: {
+            'onReady': onPlayerReady,
+            'onStateChange': onPlayerStateChange
+        },
+        playerVars: {
+            'showinfo' : 0,
+            'autohide': 1
+        }
+    });
 
-	Change
-	videoId: 'z-WG3biOXto', 
-	to the correct YouTube video id.
+Change `videoId: 'z-WG3biOXto',` to the correct YouTube video id.
 
-3. Slide In Points
-Edit the file 'data/SlideInPoints.xml' to change the inpoints of the slides. Make sure the inpoints are sequential and in the correct format e.g. '00:00:00.000', '00:00:05.500' etc... . If they are not then this will cause problems.
+## adding subtitles
 
-	It doesn't matter how many are there and at present the 'id' addtributes are not used and these do not need to be sequential
+Exporting subtitles from Amara to create captions in 'Captions.xml'
+From Amara export the subtitles as .dxfp, save it somewhere on your computer, and open it in a text editor.
+Select all the <p> tags that are inside <body region="bottom"><div> (without the <div> around) and copy them.
 
-	The slide images should all be contained in the 'images' folder, these do not need to be named in any particular format.
+In the folder `data`, find the `captions.xml` file and open it in a text editor.
+Paste the selection from the .dxfp file into the `captions.xml` file, inside the <div xml:id="captions"></div> tag. When editing the .xml file, the structure of the data should be kept the same, all tags should retain their attributes.
+
+When the captions don’t start immediately at the beginning, the first caption displayed will be an error message.
+(whenever there is nothing during a time period, it displays the message)
+You can manually add an information that replaces the error message 
+For instance:
+    <p begin="00:00:00.000" end="00:00:37.563">Subtitles will start at 00:37</p>
+    <p begin="00:00:37.564" end="00:00:37.946">(The content starts here!)</p>
+
+## adding slides
+
+Edit the file `SlideInPoints.xml` in the folder `data` to change the inpoints of the slides. Make sure the inpoints are sequential and in the correct format e.g. `00:00:00.000`, `00:00:05.500` etc. If they are not then this will cause problems.
+
+It doesn't matter how many are there and at present the `id` addtributes are not used and these do not need to be sequential (for the moment).
+
+The slide images should all be contained in the `images` folder, these do not need to be named in any particular format.
+Their resolution must be of 1000px x 750px 72 dpi
 
 4. Change Title
 In index.html edit lines 48 and 49 to change the title
