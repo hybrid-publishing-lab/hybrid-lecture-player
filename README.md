@@ -38,6 +38,8 @@ To produce the subtitles, we use the open source subtitle editor Amara http://ww
 
 The rest is simply html and javascript!
 
+For the moment, we use Youtube for the video part of the Hybrid Lecture Player. If you want to serve your video on your own server, you can also use Pandora, which is our next step for the Hybrid Lecture Player. But things still need to be set for Pandora.
+
 
 # Using the Hybrid Lecture Player
 
