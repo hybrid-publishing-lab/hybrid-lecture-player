@@ -666,6 +666,10 @@ function changeLanguage(index)
       loadGerman();
       break;
 
+    case 3:
+      loadSpanish();
+      break;
+
     default:
       break;
   }
@@ -701,6 +705,18 @@ function loadGerman()
   $.ajax({
     type: "GET",
     url: "data/captions-D.xml",
+    dataType: "xml",
+    success: parseLanguageCaptions
+  });
+
+  $("#transcription").load("html/transcription-D.html");
+}
+
+function loadSpanish()
+{
+  $.ajax({
+    type: "GET",
+    url: "data/captions-ESx.xml",
     dataType: "xml",
     success: parseLanguageCaptions
   });
