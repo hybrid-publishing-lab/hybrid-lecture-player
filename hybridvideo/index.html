@@ -1,227 +1,156 @@
 <!DOCTYPE HTML>
 <html>
+
     <head>
         <title>HYBRID LECTURE PLAYER - MCLUHAN'S MEDIA PRACTICE</title>
-
         <!-- Hybrid Video CSS -->
         <link rel="stylesheet" type="text/css" href="css/app.css" />
-        
-        <link rel="shortcut icon" href="images/favicon.ico" /> 
-
+        <link rel="shortcut icon" href="images/favicon.ico" />
         <!-- JQUERY -->
-         <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
-
-         <!-- SCROLLTO -->
-         <script src="js/scrollTo/jquery.scrollTo.js"></script>
-
+        <script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+        <!-- SCROLLTO -->
+        <script src="js/scrollTo/jquery.scrollTo.js"></script>
         <!-- Hybrid Video app code -->
         <script src="js/HybridVideo.js"></script>
-        
-        <meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
-        
+        <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        
         <!-- all the external links open in a new tab -->
-        <base target="_blank"> 
-        <!-- for Facebook -->          
+        <base target="_blank">
+        <!-- for Facebook -->
         <meta property="og:title" content="" />
         <meta property="og:type" content="" />
-        <meta property="og:image" content="" src="images/HLP-icon.png"/>
+        <meta property="og:image" content="" src="images/HLP-icon.png" />
         <meta property="og:url" content="" />
         <meta property="og:description" content="" />
-
-        <!-- for Twitter -->          
+        <!-- for Twitter -->
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="" />
         <meta name="twitter:description" content="" />
         <meta name="twitter:image" content="" />
-        
     </head>
+
     <body>
         <div class="title-lecture-print print-only">Finally Getting the Message: McLuhan’s Media Practice</div>
-        
         <!-- HEADER -->
-
-       <header>
-          <div id="header">
+        <header>
             <div class="title">
                 <div class="title-HLP">HYBRID LECTURE PLAYER</div>
                 <div class="title-lecture">Finally Getting the Message: McLuhan’s Media Practice</div>
             </div>
-            
             <div id="chapters">
-                
-                
-                
-                 <!-- TABS CONTAINER -->
-
+                <!-- TABS CONTAINER -->
                 <div class="tabs">
-    <div class="tab">
-        <input type="radio" id="tab-1" name="tab-group-1" checked>
-        <label for="tab-1">SECTIONS</label>
-        <div class="content">
-            <div class="chapter-title" onclick="goToChapter(85)" onmouseover="changePrecisContent(1)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Intro
+                    <div class="tab">
+                        <input type="radio" id="tab-1" name="tab-group-1" checked>
+                        <label for="tab-1">SECTIONS</label>
+                        <div class="content">
+                            <div class="chapter-title" onclick="goToChapter(85)" onmouseover="changePrecisContent(1)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Intro</div>
+                            <div class="chapter-title" onclick="goToChapter(764)" onmouseover="changePrecisContent(2)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> McLuhan’s Media Practice</div>
+                            <div class="chapter-title" onclick="goToChapter(1357)" onmouseover="changePrecisContent(3)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Orality</div>
+                            <div class="chapter-title" onclick="goToChapter(1626)" onmouseover="changePrecisContent(4)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Reading Writing</div>
+                            <div class="chapter-title" onclick="goToChapter(1704)" onmouseover="changePrecisContent(5)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Viewing Listening / Watching</div>
+                            <div class="chapter-title" onclick="goToChapter(2059)" onmouseover="changePrecisContent(6)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Being a Character</div>
+                            <div class="chapter-title" onclick="goToChapter(2275)" onmouseover="changePrecisContent(7)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Research Publishing</div>
+                            <div class="chapter-title" onclick="goToChapter(3920)" onmouseover="changePrecisContent(8)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Blow-Up</div>
+                            <div class="chapter-title" onclick="goToChapter(4460)" onmouseover="changePrecisContent(9)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> THE FREEWHEELIN’ McLUHAN</div>
+                        </div>
+                        <!-- end div content -->
+                    </div>
+                    <!-- end div tab -->
+                    <div class="tab">
+                        <input type="radio" id="tab-2" name="tab-group-1">
+                        <label for="tab-2">PUBLICATIONS</label>
+                        <div class="content">
+                            <!-- Publications -->
+                            <div class="chapter-title publication" onclick="goToChapter(2275)" onmouseover="changePrecisContent(10)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Mechanical Bride</div>
+                            <div class="chapter-title publication" onclick="goToChapter(2845)" onmouseover="changePrecisContent(11)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Counterblast</div>
+                            <div class="chapter-title publication" onclick="goToChapter(3295)" onmouseover="changePrecisContent(12)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Understanding Media & The Medium is the Message</div>
+                            <div class="chapter-title publication" onclick="goToChapter(3468)" onmouseover="changePrecisContent(13)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> The McLuhan DEW-Line</div>
+                            <div class="chapter-title publication" onclick="goToChapter(2921)" onmouseover="changePrecisContent(14)" onmouseleave="changePrecisContent(0)"> <span class="play-button">►</span> Explorations</div>
+                        </div>
+                        <!-- end div content -->
+                    </div>
+                    <!-- end div tab -->
                 </div>
-
-                <div class="chapter-title" onclick="goToChapter(764)" onmouseover="changePrecisContent(2)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> McLuhan’s Media Practice
-                </div>
-                
-                <div class="chapter-title" onclick="goToChapter(1357)" onmouseover="changePrecisContent(3)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Orality
-                </div>
-                
-                <div class="chapter-title" onclick="goToChapter(1626)" onmouseover="changePrecisContent(4)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Reading Writing
-                </div>
-                
-                <div class="chapter-title" onclick="goToChapter(1704)" onmouseover="changePrecisContent(5)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Viewing Listening / Watching
-                </div>
-                
-                <div class="chapter-title" onclick="goToChapter(2059)" onmouseover="changePrecisContent(6)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Being a Character
-                </div>
-                
-                <div class="chapter-title" onclick="goToChapter(2275)" onmouseover="changePrecisContent(7)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Research Publishing
-                </div>
-                
-                <div class="chapter-title" onclick="goToChapter(3920)" onmouseover="changePrecisContent(8)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Blow-Up
-                </div>
-
-                <div class="chapter-title" onclick="goToChapter(4460)" onmouseover="changePrecisContent(9)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> THE FREEWHEELIN’ McLUHAN
-                </div>
-        </div>
-    </div>
-    <div class="tab">
-        <input type="radio" id="tab-2" name="tab-group-1">
-        <label for="tab-2">PUBLICATIONS</label>
-        <div class="content">
-            <!-- Publications -->
-                <div class="chapter-title publication" onclick="goToChapter(2275)" onmouseover="changePrecisContent(10)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Mechanical Bride
-                </div>
-
-                <div class="chapter-title publication" onclick="goToChapter(2845)" onmouseover="changePrecisContent(11)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Counterblast
-                </div>
-
-                <div class="chapter-title publication" onclick="goToChapter(3295)" onmouseover="changePrecisContent(12)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Understanding Media & The Medium is the Message
-                </div>
-                
-                <div class="chapter-title publication" onclick="goToChapter(3468)" onmouseover="changePrecisContent(13)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> The McLuhan DEW-Line
-                </div>
-
-                <div class="chapter-title publication" onclick="goToChapter(2921)" onmouseover="changePrecisContent(14)" onmouseleave="changePrecisContent(0)">
-                  <span class="play-button">►</span> Explorations
-                </div>
-        </div>
-    </div>
-</div>
-</div><!-- END TABS CONTAINER -->
-                
-
-                
+                <!-- end div tabs -->
             </div>
+            <!-- end div chapters -->
+            <!--SECTIONS DESCRIPTIONS-->
             <div id="precis">
-              <!--Chapter precis text goes here, not too much longer than this text: just enough to give a quick idea of the contents.-->
-              Finally Getting the Message: McLuhan’s Media Practice. A lecture by Graham Larkin, given at the McLuhan Salon, Canadian Embassy, Berlin, in 2011
+                <!--Short description of the whole lecture-->
+                Finally Getting the Message: McLuhan’s Media Practice. A lecture by Graham Larkin, given at the McLuhan Salon, Canadian Embassy, Berlin, in 2011
             </div>
-          </div>
-          
+            <!-- end div precis -->
         </header>
-
-        <nav>
-        </nav>
-
+        <!-- MAIN BOXES: SLIDES + VIDEO + TRANSCRIPTION + ADDITIONAL MATERIALS-->
         <article>
-          <!-- CONTENT -->
-          <div id="content">
-
             <!-- LEFT COLUMN -->
             <div id="left-column">
-              <!-- SLIDE -->
-              <div id="slide-container">
-                <img id="img" src="images/Slide001.jpg">
-              </div>
+                <!-- SLIDES -->
+                <div id="slide-container">
+                    <img id="img" src="images/Slide001.jpg">
+                </div>
             </div>
-
-
             <!-- RIGHT COLUMN -->
             <div id="right-column">
-              <!-- VIDEO -->
-              <div id="video-container">
-                <div id="player">
+                <!-- VIDEO -->
+                <div id="video-container">
+                    <div id="player"></div>
                 </div>
-              </div>
-
-              <!-- BELOW VIDEO -->
-              <div id="below-video-container">
-                <div id="transcription-line">
-                  Lecture will begin shortly.
+                <!-- BELOW THE VIDEO -->
+                <div id="below-video-container">
+                    <!-- SUBTITLES -->
+                    <div id="transcription-line">Lecture will begin shortly.</div>
+                    <div id="citation-button">
+                        <button type="button" onclick="makeCitation()">SHARE SECTION</button>
+                    </div>
+                    <div id="language-button">
+                        <select name='language' onchange="if (this.selectedIndex) changeLanguage(this.selectedIndex);">
+                            <option class='head'>Language</option>
+                            <option value='1' selected="selected">English</option>
+                            <option value='2'>French</option>
+                            <option value='3'>German</option>
+                        </select>
+                    </div>
                 </div>
-                <div id="citation-button">
-                   <button type="button" onclick="makeCitation()">SHARE SECTION</button>
-                </div>
-                <div id="language-button">
-                  <select name='language' onchange="if (this.selectedIndex) changeLanguage(this.selectedIndex);">
-                      <option class='head'>Language</option>
-                      <option value='1' selected="selected">English</option>
-                      <option value='2'>French</option>
-                      <option value='3'>German</option>
-                  </select>
-              </div>
             </div>
+            <!-- TRANSCRIPTION -->
+            <div id="transcription-container">
+                <div id="transcription-button">
+                    <button type="button" onclick="synchronizeTranscription()">SYNCHRONIZE TRANSCRIPTION</button> <a href="javascript:if(window.print)window.print()"><button id="download-pdf" type="button">DOWNLOAD PDF</button></a>
 
-        </div>
-        <div id="transcription-container">
-          <div id="transcription-button">
-            <button type="button" onclick="synchronizeTranscription()">SYNCHRONIZE TRANSCRIPTION</button>
-            <a href="images/lecture.pdf" target="_blank"><button id="download-pdf" type="button">DOWNLOAD PDF</button></a>
-          </div>
-          <div id="transcription">
-          </div>
-        </div>
-        
-        <div id="xtra">
-          <!--Contextual Information is added here.-->
-        </div>
-      </div><!-- END DIV CONTENT -->
-
-      </article>
-
-      <!-- FOOTER -->
-      <footer>
-        <div id="footer">
+                </div>
+                <div id="transcription"></div>
+            </div>
+            <div id="xtra">
+                <!--Contextual Information is added here.-->
+            </div>
+        </article>
+        <!-- FOOTER -->
+        <footer>
             <div class="credits slide_up">
-                <div>
-                A Hybrid Publishing Consortium project | <a href="http://www.consortium.io/about">About us</a> | Research: <a href="https://mcluhan.consortium.io/">Traces on the Archive</a> | <a href="https://github.com/consortium/hybrid-lecture-player">Software (GitHub)</a> | <a href="mailto:mail@consortium.io">Contact</a><br/>
-               MORE <span style="font-size: 12px; vertical-align: 2px;">▼</span>
+                <div>A Hybrid Publishing Consortium project | <a href="http://www.consortium.io/about">About us</a> | Research: <a href="https://mcluhan.consortium.io/">Traces on the Archive</a> | <a href="https://github.com/consortium/hybrid-lecture-player">Software (GitHub)</a> | <a href="mailto:mail@consortium.io">Contact</a>
+                    <br/>MORE <span style="font-size: 12px; vertical-align: 2px;">▼</span>
+
                 </div>
             </div>
             <div id="footer_slide">
-                <img src="images/logo_EU.jpg" style="height: 80px; margin-right: 10px;" alt="Europa"> 
+                <img src="images/logo_EU.jpg" style="height: 80px; margin-right: 10px;" alt="Europa">
                 <img src="images/logo_EuropafoerdertNds.jpg" style="width: 80px; margin-right: 10px;" alt="Niedersachsen">
-                <img src="images/logo_leuphana.jpg" style="width: 80px; margin-right: 10px;" alt="Leuphana">
-                <a href="http://www.mcluhan-salon.de/" style="border-bottom: 0px solid black;"><img src="images/logo_McLuhan.jpg" style="width: 80px; margin-right: 10px;"></a><br/><br/>
-                Funded by the EU major project Innovation Incubator Lüneburg<br/>
-                HPC is part of the Hybrid Publishing Lab at the Centre for Digital Cultures, Leuphana University, Lüneburg, Germany and is funded by the European Union and the German federal State of Lower Saxony. Also thanks to our collaboration partner on the project the Marshall McLuhan Salon, Canadian Embassy, Berlin.<br/><br/>
-                Credits<br/>
-                Simon Worthington: Concept, Project Lead | Christina Kral: Concept, Project Manager | Graham Larkin: Lecturer, slides, network in Canada, exchange | Daniel Jackson: Avco Ltd, software tool developer | Loraine Furter: Interface Design | Johannes Amorosa: Sysadmin | Annika Gieselmann: Transcription draft | Baruch Gottlieb: Associate Editor | Stephen Kovats: Instigator | Thank you to Baruch Gottlieb for proposing this lecture to use for this case study. | Special thanks to Andrea Boegner from the McLuhan Salon, Canadian Embassy in Berlin for providing space, thought and materials in order to see this case study come into existence.
-                <br/><br/>
-                <a href="https://github.com/consortium/hybrid-lecture-player">Video, text and image copyrights</a><br/><br/>
-                <a href="http://www.leuphana.de/en/site-notice-leuphana.html">Imprint</a>
+                <img src="images/logo_leuphana.jpg" style="width: 80px; margin-right: 10px;" alt="Leuphana"> <a href="http://www.mcluhan-salon.de/" style="border-bottom: 0px solid black;"><img src="images/logo_McLuhan.jpg" style="width: 80px; margin-right: 10px;"></a>
+                <br/>
+                <br/>Funded by the EU major project Innovation Incubator Lüneburg
+                <br/>HPC is part of the Hybrid Publishing Lab at the Centre for Digital Cultures, Leuphana University, Lüneburg, Germany and is funded by the European Union and the German federal State of Lower Saxony. Also thanks to our collaboration partner on the project the Marshall McLuhan Salon, Canadian Embassy, Berlin.
+                <br/>
+                <br/>Credits
+                <br/>Simon Worthington: Concept, Project Lead | Christina Kral: Concept, Project Manager | Graham Larkin: Lecturer, slides, network in Canada, exchange | Daniel Jackson: Avco Ltd, software tool developer | Loraine Furter: Interface Design | Johannes Amorosa: Sysadmin | Annika Gieselmann: Transcription draft | Baruch Gottlieb: Associate Editor | Stephen Kovats: Instigator | Thank you to Baruch Gottlieb for proposing this lecture to use for this case study. | Special thanks to Andrea Boegner from the McLuhan Salon, Canadian Embassy in Berlin for providing space, thought and materials in order to see this case study come into existence.
+                <br/>
+                <br/> <a href="https://github.com/consortium/hybrid-lecture-player">Video, text and image copyrights</a>
+                <br/>
+                <br/> <a href="http://www.leuphana.de/en/site-notice-leuphana.html">Imprint</a>
+
             </div>
-
-        </div>
-      </footer>
-
-      
+        </footer>
     </body>
+
 </html>

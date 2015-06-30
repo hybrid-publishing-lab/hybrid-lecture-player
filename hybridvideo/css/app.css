@@ -1,84 +1,73 @@
 /* Fixes the initial browser s style */
-* {
+ * {
     margin: 0;
     padding: 0;
 }
-
 div {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
-
-html {
+/* Background color */
+ html {
     background-color: black;
 }
-
-body {
-	font-size: 18px;
-	font-family: sans-serif;
-	line-height: 24px;
-	letter-spacing: 1px;
+/* GENERAL STYLES */
+ body {
+    font-size: 18px;
+    font-family: sans-serif;
+    line-height: 24px;
+    letter-spacing: 1px;
 }
 a, a:visited, a:hover, a:focus {
-	text-decoration: none;
-	color: black;
-	border-bottom: 2px solid white;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid white;
 }
 h3 {
-	font-size: 24px;
-	text-transform: uppercase;
-	font-weight: normal;
-	margin: 20px 0px;
-	letter-spacing: 4px;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: normal;
+    margin: 20px 0px;
+    letter-spacing: 4px;
 }
-
 p + p {
-	text-indent: 40px;
-	margin-top: 20px;
+    text-indent: 40px;
+    margin-top: 20px;
 }
 img {
-	margin-bottom: -5px;
+    margin-bottom: -5px;
 }
-
-.double-sided {
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
-}
-
 /* HEADER */
-
-#header {
-	width: 100%;
-	padding: 0px;
-	background-color: rgb(240, 20, 50);
-	color: black;
+ header {
+    width: 100%;
+    padding: 0px;
+    background-color: rgb(240, 20, 50);
+    color: black;
 }
-
 .title {
-	padding: 10px 6px 6px 15px;
-	width: 100%;
-	display: inline-block;
-	height: auto;
-	border-bottom: 8px solid white;
-	font-size: 22px;
-	letter-spacing: 1px;
+    padding: 10px 6px 6px 15px;
+    width: 100%;
+    display: inline-block;
+    height: auto;
+    border-bottom: 8px solid white;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 .title-HLP {
-	float: left;
-	margin-right: 20px;
+    float: left;
+    margin-right: 20px;
 }
 .title-HLP:after {
-	content: '|';
-	margin-left: 20px;
+    content:'|';
+    margin-left: 20px;
 }
 .title-lecture {
-	color: black;
-	text-transform: uppercase;
+    color: black;
+    text-transform: uppercase;
 }
-
 /* TABS */
-.tabs {
+ .tabs {
     position: relative;
     height: 150px;
     clear: both;
@@ -86,14 +75,13 @@ img {
     background: rgb(240, 20, 50);
 }
 .tabs .content {
-  position: absolute;
-  top: 0px;
-  left: -15px;
-  background: rgb(240, 20, 50);
-  right: 0;
-  bottom: 0;
-  padding: 12px;
-
+    position: absolute;
+    top: 0px;
+    left: -15px;
+    background: rgb(240, 20, 50);
+    right: 0;
+    bottom: 0;
+    padding: 12px;
 }
 .tab {
     float: left;
@@ -108,135 +96,125 @@ img {
 .tab[type=radio] {
     display: none;
 }
-
 [type=radio]:checked ~ label {
     background: white;
 }
 [type=radio]:checked ~ label ~ .content {
     z-index: 1;
 }
-
 #chapters {
-	width: 70%;
-	float: left;
-	padding: 10px 6px 6px 15px;
-	display:inline-block;
-	height: auto;
-	cursor: pointer;
-	background-color: rgb(240, 20, 50);
-	border-right: 8px solid white;
+    width: 70%;
+    float: left;
+    padding: 10px 6px 6px 15px;
+    display:inline-block;
+    height: auto;
+    cursor: pointer;
+    background-color: rgb(240, 20, 50);
+    border-right: 8px solid white;
 }
 #chapters a, #chapters a:visited {
-	color: black;
-	text-decoration: none;
+    color: black;
+    text-decoration: none;
 }
 .play-button {
-	font-size: 70%;
-	vertical-align: 15%;
+    font-size: 70%;
+    vertical-align: 15%;
 }
 .chapter-title {
-	float: left;
-	margin: 0px 25px 0px 0px;
-	color: black;
-	text-transform: uppercase;
-	font-size: 22px;
-	letter-spacing: 1px;
+    float: left;
+    margin: 0px 25px 0px 0px;
+    color: black;
+    text-transform: uppercase;
+    font-size: 22px;
+    letter-spacing: 1px;
 }
 .chapter-title:hover {
-	color: white;
+    color: white;
 }
+/* DESCRIPTION OF THE CHAPTERS / SECTIONS */
 #precis {
-	width: 30%;
-	float: left;
-	color: white;
-	background-color: rgb(0, 0, 0);
-	height: 100%;
-	padding: 10px 6px 5px 15px;
+    width: 30%;
+    float: left;
+    color: white;
+    background-color: rgb(0, 0, 0);
+    height: 100%;
+    padding: 10px 6px 5px 15px;
 }
-
-/* MAIN */
-
-article {
-	padding: 0px;
+/* MAIN BOXES: SLIDES + VIDEO + TRANSCRIPTION + ADDITIONAL MATERIALS */
+ article {
+    background-color: #000;
+    width: 100%;
+    padding: 0px;
+    border-top: 8px solid white;
+    display: inline-block;
+    margin-bottom: -7px;
 }
-
-/* SLIDES + VIDEO */
-
-#content {
-	background-color: #000;
-	width: 100%;
-	padding: 0px;
-	border-top: 8px solid white;
-	display: inline-block;
-	margin-bottom: -7px;
-}
-
 /* SLIDES */
-#left-column {
-	width: 50%;
-	height:40vw;
-	float: left;
-	border:0;
+ #left-column {
+    width: 50%;
+    height:40vw;
+    float: left;
+    border:0;
 }
 #slide-container img {
-	max-width: 100%;
-	max-height: 40vw;
-	display: block;
-	margin: auto;
+    max-width: 100%;
+    max-height: 40vw;
+    display: block;
+    margin: auto;
 }
 /* VIDEO */
-#right-column {
-	width: 50%;
-	height:40vw;
-	float: left;
-	border-left: 8px solid white;
-	margin-bottom: -1px;
+ #right-column {
+    width: 50%;
+    height:40vw;
+    float: left;
+    border-left: 8px solid white;
+    margin-bottom: -1px;
 }
 #player {
-	margin: 0px 0px;
+    margin: 0px 0px;
 }
 #video-container {
-	position: relative;
-	padding-bottom: 56.25%;
-	padding-top: 30px;
-	height: 0;
-	overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
 }
 #video-container iframe {
-	position:absolute;
-	top:0;
-	left:0;
-	width:100%;
-	height:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
 }
-
 /* SUBTITLES */
-#transcription-line {
-	float: left;
-	width: 80%;
-	height: 120px;
-	font-size: 12px;    /* old */
-  	font-size: 1.8vm;   /* IE9 */
-  	font-size: 1.8vw;
-	line-height: 115%;
-	padding: 15px;
-	text-align: left;
-	color: white;
+ #transcription-line {
+    float: left;
+    width: 80%;
+    height: 120px;
+    font-size: 12px;
+    /* old */
+    font-size: 1.8vm;
+    /* IE9 */
+    font-size: 1.8vw;
+    line-height: 115%;
+    padding: 15px;
+    text-align: left;
+    color: white;
 }
-
 #citation-button {
-	margin-top: 3%;
-	float: left;
-	width: 15%;
+    margin-top: 3%;
+    float: left;
+    width: 15%;
 }
 #citation-button button {
-	padding: 5px;
+    padding: 5px;
     background-color: rgb(240, 20, 50);
     color: white;
     border: 0;
-	height: 3vw;
-	width: 100%;
-	font-size: 0.9vw;
+    height: 3vw;
+    width: 100%;
+    font-size: 0.9vw;
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
@@ -245,57 +223,55 @@ article {
     transition-duration: 0;
 }
 #language-button {
-	margin-top: 1%;
-	float: left;
-	width: 15%;
+    margin-top: 1%;
+    float: left;
+    width: 15%;
 }
 #language-button select {
-	border: 0;
+    border: 0;
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
-	height: 1.5vw;
-	width: 100%;
-	font-size: 0.9vw;
-	padding: 1% 5%;
-	text-transform: uppercase;
-	-webkit-appearance: none;
-   	-moz-appearance: none;
-   	appearance: none;
-	background-color: white;
-	-moz-border-radius: 0px;
-	border-radius: 0px;
+    height: 1.5vw;
+    width: 100%;
+    font-size: 0.9vw;
+    padding: 1% 5%;
+    text-transform: uppercase;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: white;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
 }
 #language-button select:active, #language-button select:focus {
-	outline: 0;
+    outline: 0;
 }
-input::-moz-focus-inner { 
-  border: 0; 
+input::-moz-focus-inner {
+    border: 0;
 }
-
 option.head {
     selected: selected;
     display: none;
     disabled: disabled;
 }
-
 /* TRANSCRIPTION TEXT */
-#transcription-container {
-	float: left;
-	width: 65%;
-	background-color: white;
+ #transcription-container {
+    float: left;
+    width: 65%;
+    background-color: white;
 }
 #transcription-button {
-	margin: 2% 5%;
+    margin: 2% 5%;
 }
 #transcription-button button {
-	padding: 5px;
-	margin: 10px 10px 0 0;
+    padding: 5px;
+    margin: 10px 10px 0 0;
     background-color: rgb(45, 53, 116);
     color: white;
-	font-weight: bold;
+    font-weight: bold;
     border: 0;
-	font-size: 60%;
+    font-size: 60%;
     -webkit-box-shadow: 0;
     -moz-box-shadow: 0;
     box-shadow: 0;
@@ -303,264 +279,261 @@ option.head {
     -moz-transition-duration: 0;
     transition-duration: 0;
 }
-
 #transcription {
-	height: 300px;
-	overflow-y: scroll;
-	display:inline-block;
-	padding: 2% 5%;
-	background-color: white;
-	color: black;
-	margin-top: 0px;
-	margin-bottom: -8px;
+    height: 300px;
+    overflow-y: scroll;
+    display:inline-block;
+    padding: 2% 5%;
+    background-color: white;
+    color: black;
+    margin-top: 0px;
+    margin-bottom: -8px;
 }
 #transcription span.active {
-	border-bottom: 4px solid red;
+    border-bottom: 4px solid red;
 }
 #transcription span:hover {
-	color: red;
-	cursor: pointer;
+    color: red;
+    cursor: pointer;
 }
-
-/* XTRA */
-#xtra {
-	width: 35%;
-	color: white;
-	padding: 10px 6px 5px 15px;
-	height: 300px;
-	border-top: 8px solid white;
-	float: left;
-	background-color: black;
+/* ADDITIONAL MATERIALS */
+ #xtra {
+    width: 35%;
+    color: white;
+    padding: 10px 6px 5px 15px;
+    height: 300px;
+    border-top: 8px solid white;
+    float: left;
+    background-color: black;
 }
 #xtra a, #xtra a:visited, #xtra a:hover {
-	color: white;
-	text-decoration: none;
-	border-bottom: 2px solid white;
+    color: white;
+    text-decoration: none;
+    border-bottom: 2px solid white;
 }
 #xtra iframe {
-	width:100%;
-	height:100%;
+    width:100%;
+    height:100%;
 }
-
-#footer {
-	float: left;
-	width: 100%;
-	height: 100px;
-	clear: both;
-	background-color: rgb(45, 53, 116);
-	border-top: 8px solid white;
-	color: white;
+/* FOOTER */
+footer {
+    float: left;
+    width: 100%;
+    height: 100px;
+    clear: both;
+    background-color: rgb(45, 53, 116);
+    border-top: 8px solid white;
+    color: white;
 }
-#footer a, #footer a:visited, #footer a:hover {
-	color: white;
+footer a, footer a:visited, footer a:hover {
+    color: white;
 }
 .credits {
-	padding: 20px;
-	background-color: rgb(45, 53, 116);
+    padding: 20px;
+    background-color: rgb(45, 53, 116);
 }
 #footer_slide a, #footer_slide a:visited, #footer_slide a:hover {
-	color: black;
-	border-bottom: 2px solid black;
+    color: black;
+    border-bottom: 2px solid black;
 }
 #footer_slide {
     display: none;
-	width: 100%;
-	color: black;
-	padding: 20px;
-	background-color: white;
+    width: 100%;
+    color: black;
+    padding: 20px;
+    background-color: white;
 }
 
-@media (min-width:540px) and (max-width:940px) {
-	body {
-		font-size: 16px;
-	}
-	h3 {
-		font-size: 20px;
-	}
-	#left-column {
-		height:55vw;
-	}
-	#right-column {
-		height:55vw;
-	}
-	#transcription-line {
-		float: left;
-		width: 100%;
-		height: 120px;
-		font-size: 12px;    /* old */
-		font-size: 2vm;   /* IE9 */
-		font-size: 2vw;
-		line-height: 115%;
-		padding: 15px;
-		text-align: left;
-		color: white;
-	}
-	#citation-button {
-		width: auto;
-		margin-top: 17px;
-		margin-left: 5%;
-	}
-	#citation-button button {
-		margin-bottom: 17px;
-		width: 80px;
-		height: 40px;
-		font-size: 12px;
-	}
-	#language-button {
-		margin: 2% 5%;
-		float: left;
-		width: 80px;
-		margin-top: 17px;
-	}
-	#language-button select {
-		height: 40px;
-		width: 100%;
-		font-size: 12px;
-		padding: 6px;
-	}
-	#transcription-button button {
-		padding: 5px;
-		font-size: 12px;
-	}
+/* RESPONSIVE STYLESHEET */
+@media screen and (min-width:540px) and (max-width:940px) {
+    body {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    #left-column {
+        height:55vw;
+    }
+    #right-column {
+        height:55vw;
+    }
+    #transcription-line {
+        float: left;
+        width: 100%;
+        height: 120px;
+        font-size: 12px;
+        /* old */
+        font-size: 2vm;
+        /* IE9 */
+        font-size: 2vw;
+        line-height: 115%;
+        padding: 15px;
+        text-align: left;
+        color: white;
+    }
+    #citation-button {
+        width: auto;
+        margin-top: 17px;
+        margin-left: 5%;
+    }
+    #citation-button button {
+        margin-bottom: 17px;
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #language-button {
+        margin: 2% 5%;
+        float: left;
+        width: 80px;
+        margin-top: 17px;
+    }
+    #language-button select {
+        height: 40px;
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+    }
+    #transcription-button button {
+        padding: 5px;
+        font-size: 12px;
+    }
+}
+@media screen and (min-width:250px) and (max-width:540px) {
+    body {
+        font-size: 16px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    #chapters {
+        display: none;
+    }
+    #precis {
+        display: none;
+    }
+    #citation-button {
+        width: auto;
+        margin-top: 17px;
+        margin-left: 5%;
+    }
+    #citation-button button {
+        margin-bottom: 17px;
+        width: 80px;
+        height: 40px;
+        font-size: 12px;
+    }
+    #language-button {
+        margin: 2% 5%;
+        float: left;
+        width: 80px;
+        margin-top: 17px;
+    }
+    #language-button select {
+        height: 40px;
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+    }
+    #left-column {
+        width: 100%;
+        float: none;
+        border:0;
+        border-right:0;
+        margin-right: 0px;
+    }
+    #right-column {
+        width: 100%;
+        float: none;
+        border-left: 0px;
+        border-top: 8px solid white;
+    }
+    #transcription-line {
+        width: 100%;
+        height: 70px;
+        font-size: 4.7vw;
+    }
+    #transcription-container {
+        width: 100%;
+    }
+    #transcription-button {
+        margin: 2% 5%;
+    }
+    #transcription-button button {
+        padding: 5px;
+        font-size: 12px;
+    }
+    #xtra {
+        display: none;
+    }
 }
 
-@media (min-width:250px) and (max-width:540px) {
-	body {
-		font-size: 16px;
-	}
-	h3 {
-		font-size: 20px;
-	}
-	#chapters {
-		display: none;
-	}
-	#precis {
-		display: none;
-	}
-	#citation-button {
-		width: auto;
-		margin-top: 17px;
-		margin-left: 5%;
-	}
-	#citation-button button {
-		margin-bottom: 17px;
-		width: 80px;
-		height: 40px;
-		font-size: 12px;
-	}
-	#language-button {
-		margin: 2% 5%;
-		float: left;
-		width: 80px;
-		margin-top: 17px;
-	}
-	#language-button select {
-		height: 40px;
-		width: 100%;
-		font-size: 12px;
-		padding: 6px;
-	}
-	#left-column {
-		width: 100%;
-		float: none;
-		border:0;
-		border-right:0;
-		margin-right: 0px;
-	}
-	#right-column {
-		width: 100%;
-		float: none;
-		border-left: 0px;
-		border-top: 8px solid white;
-	}
-	#transcription-line {
-		width: 100%;
-		height: 70px;
-		font-size: 4.7vw;
-	}
-	#transcription-container {
-		width: 100%;
-	}
-	#transcription-button {
-		margin: 2% 5%;
-	}
-	#transcription-button button {
-		padding: 5px;
-		font-size: 12px;
-	}
-	#xtra {
-		display: none;
-	}
-}
-
-@media screen {
-	.print-only {
-		display: none;
-	}
-}
-
+/* PRINT STYLESHEET */
 @media print {
-    header, nav, #left-column, #right-column, #transcription-button, #xtra, #footer {
-		display: none;
-	}
-	html, body, article, #content {
-		height: auto;
-		font-size: 14px;
-		line-height: 18px;
-		background-color: transparent;
-	}
-	h3 {
-		font-size: 20px;
-	}
-	#content {
-		background-color: transparent;
-		width: 100%;
-		padding: 0px;
-		border-top: 8px solid white;
-		display: inline-block;
-		margin-bottom: -7px;
-	}
-	#transcription-container {
-		float: none;
-		width: 75%;
-		margin-left: 7%;
-		height: initial;
-	}
-	.title-lecture-print {
-		margin-left: 7%;
-		margin-top: 7%;
-		font-size: 20px;
-	}
-	#transcription-container img {
-		width: 500px;
-		margin: 30px 0px;
-		-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-        page-break-inside: avoid; /* Firefox */
-        break-inside: avoid; /* IE 10+ */
-	}
-	#transcription-button {
-		display: none;
-	}
-	#transcription {
-		height: auto;
-		overflow-y: visible;
-		display: inline;
-		background-color: transparent;
-		color: black;
-	}
-	#transcription span.active {
-		border-bottom: 0px;
-	}
-	#transcription span:hover {
-		color: black;
-	}
-	.no-page-break {
-		-webkit-column-break-inside: avoid; /* Chrome, Safari, Opera */
-          page-break-inside: avoid; /* Firefox */
-               break-inside: avoid; /* IE 10+ */
-	}
-	
+    header, nav, #left-column, #right-column, #transcription-button, #xtra, footer {
+        display: none;
+    }
+    html, body, article, #content {
+        height: auto;
+        font-size: 15px;
+        line-height: 20px;
+        background-color: transparent;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .title-lecture-print {
+        font-size: 20px;
+        line-height: 26px;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        border-bottom: 2px solid black;
+        padding-bottom: 10px;
+        margin: 15px 15px 0 15px;
+    }
+    article, #content, #transcription-container, #transcription {
+        display: inline;
+    }
+    #content {
+        background-color: transparent;
+    }
+    #transcription-container {
+        width: 80%;
+        margin: 20px;
+    }
+    #transcription-container img {
+        width: 500px;
+        margin: 30px 0px;
+        -webkit-column-break-inside: avoid;
+        /* Chrome, Safari, Opera */
+        page-break-inside: avoid;
+        /* Firefox */
+        break-inside: avoid;
+        /* IE 10+ */
+    }
+    #transcription-button {
+        display: none;
+    }
+    #transcription {
+        height: auto;
+        overflow-y: visible;
+        background-color: transparent;
+        color: black;
+        width: 80%;
+    }
+    #transcription span.active {
+        border-bottom: 0px;
+    }
+    #transcription span:hover {
+        color: black;
+    }
 }
 @page {
-margin: 0.5cm;
+    margin: 1cm;
+}
+@media screen {
+    .print-only {
+        display: none;
+    }
 }
