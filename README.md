@@ -193,6 +193,25 @@ Just after in the `HybridVideo.js` file, in the part strating on line 678, add a
         $("#transcription").load("html/transcription-ES.html");
     }
 
-## additional material
+## To add additional material (bottom right box)
 
-Coming soon!
+In the folder `data`, open the file `ContextualHtml.xml` in a text editor.
+
+Edit the starting time at which the additional material should be added, corresponding to the video, and its end time. In `[CDATA[]]` insert the iframe of a new video, like that: `[CDATA[<iframe width="420" height="315" src="https://www.youtube.com/embed/bx9zIGxQ-zE" frameborder="0" allowfullscreen></iframe>]] `
+
+Each part like the following extract represents an additional material:
+
+```html
+    <!-- Bob Dylan Don't Look Back Interview -->
+	<xtra begin="01:18:00" end="01:18:30"><![CDATA[<iframe width="420" height="315" src="https://www.youtube.com/embed/mnl5X5MQKTg" frameborder="0" allowfullscreen></iframe>]]></xtra>
+```
+
+When there is nothing in the box during a time period here is what should be written in the code:
+
+```html
+    <!-- Title of the additional element -->
+	<xtra begin="00:00:00" end="01:18:00"><![CDATA[]]></xtra>
+```
+
+
+# ready to play!
