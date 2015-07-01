@@ -47,7 +47,7 @@ $(document).ready(function()
     dataType: "xml",
     success: parseParagraphs
   });
-  
+
   $( ".credits" ).click(function() {
     $( "#footer_slide" ).slideToggle( "slow");
     $('html, body').animate({
@@ -69,7 +69,7 @@ function getQueryVariable(variable)
 }
 
 function parseParagraphs(document){
-    
+
     var i = 0;
 
     $(document).find("p").each(function(){
@@ -87,7 +87,7 @@ function parseParagraphs(document){
 }
 
 function parseSlides(document){
-    
+
     var i = 0;
 
     $(document).find("slide").each(function(){
@@ -132,7 +132,7 @@ function parseContextualHtml(document){
 }
 
 function parseCaptions(document){
-    
+
     var i = 0;
 
     $(document).find("p").each(function(){
@@ -163,8 +163,8 @@ function checkAndChangeSlideAndText()
   // CHANGE SLIDE IF REQUIRED
   if(player.getCurrentTime)
   {
-    var timeNow = player.getCurrentTime();                
-    
+    var timeNow = player.getCurrentTime();
+
     // If position has advanced beyond the next slide
     if(timeNow >= slideInPoints[slideNumber + 1])
     {
@@ -233,7 +233,7 @@ function checkAndChangeSlideAndText()
 
   }
 
-  
+
 }
 
 
@@ -306,7 +306,7 @@ function findSlideNumber(timeNow)
     var i = 0;
     var slideNo = 0;
     var slidesLength = slideInPoints.length;
-    
+
     while(notFoundYet && i < slidesLength)
     {
       if(timeNow < slideInPoints[i+1])
@@ -316,7 +316,7 @@ function findSlideNumber(timeNow)
       }
       i++;
     }
-    
+
     if(timeNow > slideInPoints[slidesLength-1])
     {
       slideNo = slidesLength-1;
@@ -333,7 +333,7 @@ function findCaptionNumber(timeNow)
     var i = 0;
     var captionNo = 0;
     var captionsLength = captionsInPoints.length;
-    
+
     while(notFoundYet && i < captionsLength)
     {
       if(timeNow < captionsInPoints[i+1])
@@ -343,7 +343,7 @@ function findCaptionNumber(timeNow)
       }
       i++;
     }
-    
+
     if(timeNow > captionsInPoints[captionsLength-1])
     {
       captionNo = captionsLength-1;
@@ -360,7 +360,7 @@ function findContextualHtmlNumber(timeNow)
     var i = 0;
     var contextualHtmlNo = 0;
     var contextualHtmlLength = contextualHtmlInPoints.length;
-    
+
     while(notFoundYet && i < contextualHtmlLength)
     {
       if(timeNow < contextualHtmlInPoints[i+1])
@@ -370,7 +370,7 @@ function findContextualHtmlNumber(timeNow)
       }
       i++;
     }
-    
+
     if(timeNow > contextualHtmlInPoints[contextualHtmlLength-1])
     {
       contextualHtmlNo = contextualHtmlLength-1;
@@ -386,7 +386,7 @@ function convertTimeCodeToSeconds(timeString)
   var hours = Number(timeArray[0]) * 60 * 60;
   var minutes = Number(timeArray[1]) * 60;
   var seconds = Number(timeArray[2]);
-  
+
   var totalTime = hours + minutes + seconds;
   return totalTime;
 }
@@ -408,7 +408,7 @@ function onYouTubeIframeAPIReady() {
   player = new YT.Player('player', {
     height: '390',
     width: '640',
-    videoId: 'z-WG3biOXto',
+    videoId: '9SEC2hWMWG0',
     events: {
       'onReady': onPlayerReady,
       'onStateChange': onPlayerStateChange
@@ -439,7 +439,7 @@ var done = false;
 
 function onPlayerStateChange(event) {
   if (event.data == YT.PlayerState.PLAYING && !done) {
-    
+
     // setTimeout(stopVideo, 6000);
     // done = true;
   }
@@ -519,79 +519,70 @@ function changePrecisContent(chapterNumber)
 {
   switch(chapterNumber)
   {
+    // Default text when the mouse is not on the sections (same as in index.html : short description about the whole lecture/project)
     case 0:
-        document.getElementById("precis").innerHTML = "Finally Getting the Message: McLuhan's Media Practice. A lecture by Graham Larkin, given at the McLuhan Salon, Canadian Embassy, Berlin, in 2011";
+        document.getElementById("precis").innerHTML = "Description: A guided tour in the Hybrid Lecture Player, multi-format publication tool.";
         break;
 
-    // Intro With Steve Kovats
+    // SECTION 1 : BEGINNING
     case 1:
-        document.getElementById("precis").innerHTML = "Stephen Kovats provides the context in which the lecture takes places and introduces Graham Larkin";
+        document.getElementById("precis").innerHTML = "The guided tour of the Hybrid Lecture Player starts here";
         break;
 
-    // Finally Getting the Message: McLuhan's Media Practice
+    // SECTION 2: OVERVIEW
     case 2:
-        document.getElementById("precis").innerHTML = "Introduction. Graham Larkin&rsquo;s take on McLuhan&rsquo;s media practice concerned with the materiality of communications";
+        document.getElementById("precis").innerHTML = "Overview of the Hybrid Lecture Player";
         break;
 
-    // Orality
+    // SECTION 3: VIDEO, SLIDES AND SUBTITLES
     case 3:
-        document.getElementById("precis").innerHTML = "A glimpse into the archival evidence for the pre-literate stage of McLuhan&rsquo;s life";
+        document.getElementById("precis").innerHTML = "The Hybrid Lecture Player displays a video, subtitles, and associated images (like slides)";
         break;
 
-    // Reading Writing
+    // SECTION 4: TRANSCRIPTION TEXT
     case 4:
-        document.getElementById("precis").innerHTML = "Examines the young Marshall&rsquo;s literacy, and his early collections";
+        document.getElementById("precis").innerHTML = "The Hybrid Lecture Player also allows the user to read a full text transcription of the video";
         break;
 
-    // Viewing, Listening/Watching
+    // SECTION 5 ADDITIONAL MATERIALS
     case 5:
-        document.getElementById("precis").innerHTML = "Surveys the very detailed evidence for McLuhan&rsquo;s youthful involvement with radio and cinema";
+        document.getElementById("precis").innerHTML = "… and much more, like aditional materials related to the main story";
         break;
 
-    // Being a Character
+    // SECTION 6: CUSTOM ENTRY POINTS
     case 6:
-        document.getElementById("precis").innerHTML = "Surveys some fresh evidence for McLuhan&rsquo;s interests in rhetoric, including public speaking";
+        document.getElementById("precis").innerHTML = "The Hybrid Lecture Player’s customizable entry points (sections, chapters…)";
         break;
 
-    // Research Publishing
+    // SECTION 7: SYNC.
     case 7:
-        document.getElementById("precis").innerHTML = "Examines material aspects of McLuhan&rsquo;s scholarly writing, including manuscripts and typescripts for his major publications";
+        document.getElementById("precis").innerHTML = "All the elements in the Hybrid Lecture Player are synchronized";
         break;
 
-    // Blow Up
+    // SECTION 8: PRINT + PDF
     case 8:
-        document.getElementById("precis").innerHTML = "Charts McLuhan’s media image throughout the long 1960s";
+        document.getElementById("precis").innerHTML = "The Hybrid Lecture Player’s print and pdf option";
         break;
 
-    // Epilogue: The Freewheeling Marshall McLuhan
+    // SECTION 9: THE END
     case 9:
-        document.getElementById("precis").innerHTML = "Compares McLuhan&rsquo;s media persona to Bob Dylan and other performers exhibiting an improvisatory, devil-may-care attitude";
+        document.getElementById("precis").innerHTML = "Now the fun starts!";
         break;
 
-    // PUBLICATIONS
-    // Mechanical Bride
+    // CUSTOM SECTIONS
+    // CUSTOM SECTION A
     case 10:
-        document.getElementById("precis").innerHTML = "Marshall McLuhan&rsquo;s first book and a original study in popular culture, composed of a number of short essays that can be read in any order";
+        document.getElementById("precis").innerHTML = "Description of CUSTOM SECTION A";
         break;
 
-    // Counterblast
+    // CUSTOM SECTION B
     case 11:
-        document.getElementById("precis").innerHTML = "More a manifesto than a book, Counterblast is a typographically explosive compilation which focus on the effects of media on the human condition";
+        document.getElementById("precis").innerHTML = "Description of CUSTOM SECTION B";
         break;
 
-    // Understanding Media & The Medium is the Message
+    // CUSTOM SECTION C
     case 12:
-        document.getElementById("precis").innerHTML = "Collaboration with the publisher impresario Quentin Fiori on the book The Medium is the Massage in multiple formats; book, LP and as Aspen 4 magazine";
-        break;
-
-    // The McLuhan DEW-Line
-    case 13:
-        document.getElementById("precis").innerHTML = "Intended to stimulate problem-solving and thinking, in a manner that is also known as ‘thinking-outside-the-box'";
-        break;
-
-    // Explorations
-    case 14:
-        document.getElementById("precis").innerHTML = "Journal together with Edmund Carpenter throughout the 50s. Studies in Cultural Communications";
+        document.getElementById("precis").innerHTML = "Description of CUSTOM SECTION C";
         break;
 
     default:
@@ -607,8 +598,8 @@ function synchronizeTranscription()
 
   if(player.getCurrentTime)
   {
-    var timeNow = player.getCurrentTime();                
-    
+    var timeNow = player.getCurrentTime();
+
     paragraphNumber = findParagraphNumber(timeNow);
   }
 
@@ -630,7 +621,7 @@ function findParagraphNumber(timeNow)
     var i = 0;
     var paragraphNo = 0;
     var paragraphsLength = paragraphsInPoints.length;
-    
+
     while(notFoundYet && i < paragraphsLength)
     {
       if(timeNow < paragraphsInPoints[i+1])
@@ -640,7 +631,7 @@ function findParagraphNumber(timeNow)
       }
       i++;
     }
-    
+
     if(timeNow > paragraphsInPoints[paragraphsLength-1])
     {
       paragraphNo = paragraphsLength-1;
@@ -659,14 +650,6 @@ function changeLanguage(index)
       break;
 
     case 2:
-      loadFrench();
-      break;
-
-    case 3:
-      loadGerman();
-      break;
-
-    case 4:
       loadSpanish();
       break;
 
@@ -687,31 +670,6 @@ function loadEnglish()
   $("#transcription").load("html/transcription.html");
 }
 
-
-function loadFrench()
-{
-  $.ajax({
-    type: "GET",
-    url: "data/captions-F.xml",
-    dataType: "xml",
-    success: parseLanguageCaptions
-  });
-  
-  $("#transcription").load("html/transcription-F.html");
-}
-
-function loadGerman()
-{
-  $.ajax({
-    type: "GET",
-    url: "data/captions-D.xml",
-    dataType: "xml",
-    success: parseLanguageCaptions
-  });
-
-  $("#transcription").load("html/transcription-D.html");
-}
-
 function loadSpanish()
 {
   $.ajax({
@@ -725,7 +683,7 @@ function loadSpanish()
 }
 
 function parseLanguageCaptions(document){
-    
+
     var i = 0;
 
     $(document).find("p").each(function(){
@@ -741,7 +699,7 @@ function parseLanguageCaptions(document){
 
     });
 
-    changeCaption();    
+    changeCaption();
   }
 
   function changeCaption()

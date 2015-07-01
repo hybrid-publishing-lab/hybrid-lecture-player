@@ -1,32 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contextualhtml>
-	
-	<!-- Nothing-->
-	<xtra begin="00:00:00" end="01:18:00"><![CDATA[]]></xtra>
-
-	<!-- Bob Dylan Don't Look Back Interview -->
-	<xtra begin="01:18:00" end="01:18:30"><![CDATA[<iframe width="420" height="315" src="https://www.youtube.com/embed/mnl5X5MQKTg" frameborder="0" allowfullscreen></iframe>]]></xtra>
 
 	<!-- Nothing-->
-	<xtra begin="01:18:30" end="01:20:32"><![CDATA[]]></xtra>
+    <xtra begin="00:00:00" end="00:00:23"><![CDATA[]]></xtra>
 
-	<!-- Marshall McLuhan is taken far too seriously -->
-	<xtra begin="01:20:32" end="01:23:31"><![CDATA[<div><a href="https://youtu.be/Orm-urRidH8?t=2m16s">Marshall McLuhan CBC Interview Video</a></div>]]></xtra>
+    <!-- Related content -->
+    <xtra begin="00:00:24" end="00:00:29"><![CDATA[<iframe src="https://player.vimeo.com/video/116154892" width="420" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/116154892">Session 3 - THE PHILOSOPHY OF THE BOOK AND ITS CHANGES</a> from <a href="https://vimeo.com/cdcleuphana">Centre for Digital Cultures</a> on <a href="https://vimeo.com">Vimeo</a>.</p>]]></xtra>
 
-	<!-- Nothing-->
-	<xtra begin="01:23:31" end="01:25:44"><![CDATA[]]></xtra>
-
-	<!-- Lenny Bruce -->
-	<xtra begin="01:25:44" end="01:27:21"><![CDATA[<iframe width="420" height="315" src="https://www.youtube.com/embed/St0Y8-1BlCc" frameborder="0" allowfullscreen></iframe>]]></xtra>
-
-	<!-- Bob Dylan - Anarchist Cigarette -->
-	<xtra begin="01:27:21" end="01:29:06"><![CDATA[<iframe width="420" height="315" src="https://www.youtube.com/embed/bx9zIGxQ-zE" frameborder="0" allowfullscreen></iframe>]]></xtra>
-
-	<!-- Picnic In Space -->
-	<xtra begin="01:29:06" end="01:32:12"><![CDATA[<iframe width="560" height="315" src="https://www.youtube.com/embed/2HwmdSSrvfQ" frameborder="0" allowfullscreen></iframe>]]></xtra>
-
-	<!-- Nothing-->
-	<xtra begin="01:32:12" end="01:42:31.489"><![CDATA[]]></xtra>
-
+    <!-- Nothing-->
+    <xtra begin="00:00:30" end="00:00:49"><![CDATA[]]></xtra>
 </contextualhtml>
 
