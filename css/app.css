@@ -180,6 +180,7 @@ header {
     float: left;
     padding: 10px 6px 5px 15px;
 }
+/* SECOND ROW = MAIN */
 /* MAIN BOXES: SLIDES + VIDEO + TRANSCRIPTION + ADDITIONAL MATERIALS */
  article {
     width: 100%;
@@ -288,6 +289,15 @@ option.head {
     display: none;
     disabled: disabled;
 }
+
+/* THIRD ROW = TRANSCRIPTION + ADD. MATERIALS */
+#transcription {
+    height: 300px;
+}
+#xtra {
+    height: 360px;
+}
+
 /* TRANSCRIPTION TEXT */
  #transcription-container {
     float: left;
@@ -310,7 +320,6 @@ option.head {
     transition-duration: 0;
 }
 #transcription {
-    height: 300px;
     overflow-y: scroll;
     display:inline-block;
     padding: 2% 5%;
@@ -340,9 +349,9 @@ option.head {
 #xtra {
     width: 35%;
     padding: 10px 6px 5px 15px;
-    height: 300px;
     border-top: 8px solid white;
     float: left;
+    overflow: hidden;
 }
 #xtra iframe {
     width:100%;

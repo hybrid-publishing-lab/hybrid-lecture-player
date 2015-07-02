@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <contextualhtml>
-
+    <!-- DON’T put too much content there, the bottom overflow is hidden and will not show up on wide screens -->
 	<!-- Nothing-->
     <xtra begin="00:00:00" end="00:00:23"><![CDATA[]]></xtra>
 
     <!-- Related content -->
-    <xtra begin="00:00:24" end="00:00:29"><![CDATA[<iframe src="https://player.vimeo.com/video/116154892" width="420" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/116154892">Session 3 - THE PHILOSOPHY OF THE BOOK AND ITS CHANGES</a> from <a href="https://vimeo.com/cdcleuphana">Centre for Digital Cultures</a> on <a href="https://vimeo.com">Vimeo</a>.</p>]]></xtra>
+    <xtra begin="00:00:24" end="00:00:29"><![CDATA[<a href="https://mcluhan.consortium.io/"><img src="images/mcluhanHLP.png" alt="The Marshall McLuhan Lecture Player" style="width:100%"></a> <p>The Hybrid Player in use: Graham Larkin’s lecture on Marshall McLuhan.</p>]]></xtra>
+    
+	<!-- Nothing-->
+    <xtra begin="00:00:30" end="00:00:47"><![CDATA[]]></xtra>
+    
+    <!-- HPC-->
+    <xtra begin="00:00:45" end="00:00:49"><![CDATA[<iframe src="https://player.vimeo.com/video/116154892" width="420" height="236" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="https://vimeo.com/116154892">Session 3 - THE PHILOSOPHY OF THE BOOK AND ITS CHANGES</a> from <a href="https://vimeo.com/cdcleuphana">Centre for Digital Cultures</a> on <a href="https://vimeo.com">Vimeo</a>.</p>]]></xtra>
 
-    <!-- Nothing-->
-    <xtra begin="00:00:30" end="00:00:49"><![CDATA[]]></xtra>
 </contextualhtml>
 
