@@ -211,6 +211,6 @@ When there is nothing in the box during a time period here is what should be wri
 
 ## To generate a pdf of the transcription
 
-Print and save a pdf of the page from the browser (doesn’t work in every browsers) in the root folder, and name it ```manual.pdf``` (replace the previous one if necessary). It will automatically be linked to the PDF button in the file ``ìndex.html```.
+Print and save a pdf of the page from the browser (doesn’t work in every browsers) in the root folder, and name it ```manual.pdf``` (replace the previous one if necessary). It will automatically be linked to the PDF button in the file ```ìndex.html```.
 
 # ready to play!
