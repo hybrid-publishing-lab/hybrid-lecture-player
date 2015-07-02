@@ -1,6 +1,7 @@
 <!-- add the class="print-only" to the elements that should only appear in the print version -->
+<!-- everything that has the class="screen-only" won’t appear in the printed version -->
 
-<p id="paragraph001">
+<p id="paragraph001" class="screen-only">
     <h3>TRANSCRIPTION</h3>
     <span id="lineID0001" begin="00:00:00.000" end="00:00:03.250" onclick="goToSentence(this)"></span>
     <span id="lineID0002" begin="00:00:04.490" end="00:00:07.240" onclick="goToSentence(this)">Welcome to the Hybrid Lecture Player,</span>
@@ -8,7 +9,7 @@
     <span id="lineID0004" begin="00:00:09.050" end="00:00:10.910" onclick="goToSentence(this)">your audio visual project</span>
     <span id="lineID0005" begin="00:00:10.910" end="00:00:13.060" onclick="goToSentence(this)">into a multi-format publication tool.</span>
 </p>
-<p id="paragraph002">
+<p id="paragraph002" class="screen-only">
     <span id="lineID0006" begin="00:00:13.060" end="00:00:14.120" onclick="goToSentence(this)">The Hybrid Lecture player has features such as</span>
     <span id="lineID0007" begin="00:00:14.120" end="00:00:16.787" onclick="goToSentence(this)">audio, video and visual documents display,</span>
     <span id="lineID0008" begin="00:00:16.787" end="00:00:20.267" onclick="goToSentence(this)">subtitles in different languages,</span>
@@ -16,14 +17,14 @@
     <span id="lineID0010" begin="00:00:22.947" end="00:00:25.957" onclick="goToSentence(this)">and external additional materials</span>
     <span id="lineID0011" begin="00:00:25.957" end="00:00:28.417" onclick="goToSentence(this)">related to the whole project.</span>
 </p>
-<p id="paragraph003">
+<p id="paragraph003" class="screen-only">
     <span id="lineID0012" begin="00:00:28.417" end="00:00:31.177" onclick="goToSentence(this)">You can propose custom entries</span>
     <span id="lineID0013" begin="00:00:31.177" end="00:00:33.535" onclick="goToSentence(this)">into the materials.</span>
     <span id="lineID0014" begin="00:00:33.535" end="00:00:34.835" onclick="goToSentence(this)"> </span>
     <span id="lineID0015" begin="00:00:34.835" end="00:00:36.395" onclick="goToSentence(this)">Everything is synchronised</span>
     <span id="lineID0016" begin="00:00:36.395" end="00:00:38.565" onclick="goToSentence(this)">to enrich the navigation.</span>
 </p>
-<p id="paragraph004">
+<p id="paragraph004" class="screen-only">
     <span id="lineID0017" begin="00:00:38.565" end="00:00:41.234" onclick="goToSentence(this)">You can generate a print and pdf version</span>
     <span id="lineID0018" begin="00:00:41.234" end="00:00:43.224" onclick="goToSentence(this)">of the transcription text,</span>
     <span id="lineID0019" begin="00:00:43.224" end="00:00:49.000" onclick="goToSentence(this)">and start using the Player right now!</span>
@@ -31,7 +32,7 @@
 
 <div class="screen-only" style="margin: 70px 0">
     <h3>The Hybrid Lecture Player is open source and online!</h3>
-    <p>Download it on <a href="https://github.com/consortium/bubbles" target="_blank" style="border-bottom: 2px solid black">GitHub</a>, and <a href="javascript:if(window.print)window.print()" style="border-bottom: 2px solid black">print the manual</a>.</p>
+    <p>Download it on <a href="https://github.com/consortium/bubbles" target="_blank" style="border-bottom: 2px solid black">GitHub</a>, <a href="manual.pdf">download</a> or <a href="javascript:if(window.print)window.print()" style="border-bottom: 2px solid black">print</a> the manual.</p>
 </div>
 
 <!-- README GIT HUB -->
@@ -49,23 +50,24 @@
 
 <h4><a id="user-content-this-repository-contains-the-following-folders-and-files" class="anchor" href="#this-repository-contains-the-following-folders-and-files" aria-hidden="true"><span class="octicon octicon-link"></span></a>This repository contains the following folders and files</h4>
 
-<pre><code>├── css                                   ==&gt; style folder
+<pre><code>
+├── css                                   ==&gt; style folder
 │&nbsp;&nbsp; └── app.css                           style of the Hybrid Lecture Player
-├── data                                  ==&gt; captions, slides and synchronization folder
+├── data                                  ==&gt; captions, slides and sync. folder
 │&nbsp;&nbsp; ├── captions.xml                      file where the captions are encoded
 │&nbsp;&nbsp; ├── captions-LanguageCode.xml         captions in various languages
-│&nbsp;&nbsp; ├── ContextualHtml.xml                file where the additional materials are encoded
+│&nbsp;&nbsp; ├── ContextualHtml.xml                additional materials
 │&nbsp;&nbsp; │                                     (bottom-right box)
-│&nbsp;&nbsp; ├── paragraphs.xml                    synchronization of the paragraphs and the video’s timeline
-│&nbsp;&nbsp; └── SlidesInPoints.xml                synchronization of the slides and the video’s timeline
+│&nbsp;&nbsp; ├── paragraphs.xml                    sync. of the paragraphs and the video
+│&nbsp;&nbsp; └── SlidesInPoints.xml                sync. of the slides and the video
 ├── html                                  ==&gt; transcriptions folder
 │&nbsp;&nbsp; ├── transcription.html                file where the transcription is encoded
 │&nbsp;&nbsp; └── transcription-LanguageCode.html   transcription in various languages
 ├── images                                ==&gt; slides folder
 │&nbsp;&nbsp; └── …
-├── index.html                            the structure of the Hybrid Lecture Player’s page
+├── index.html                            the structure of the HLP’s page
 └── js                                    ==&gt; javascript folder
-    ├── HybridVideo.js                    the heart of the Player: synchronization scripts
+    ├── HybridVideo.js                    synchronization scripts
     └── scrollTo                          automatic scrolling in the transcription
 </code></pre>
 
@@ -198,5 +200,12 @@
     </div>
 
 <h3><a id="user-content-ready-to-play" class="anchor" href="#ready-to-play" aria-hidden="true"><span class="octicon octicon-link"></span></a>ready to play!</h3>
+
+
+<div class="print-only">
+    <p>A Hybrid Publishing Consortium project: http://www.consortium.io/<br />
+        Research: https://research.consortium.io/ (Traces on the Archive) <br />
+        Software (GitHub) https://github.com/consortium/hybrid-lecture-player <br />Contact: mail@consortium.io
+    </p>
 
 </div>

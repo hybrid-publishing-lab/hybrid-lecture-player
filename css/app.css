@@ -328,6 +328,8 @@ option.head {
     text-transform: uppercase;
 }
 .git-hub-readme code, .git-hub-readme pre {
+    font-size: 9px;
+    line-height:12px;
     white-space: pre-wrap;       /* css-3 */
     white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
     white-space: -pre-wrap;      /* Opera 4-6 */
@@ -483,6 +485,9 @@ footer {
 
 /* PRINT STYLESHEET */
 @media print {
+    .screen-only {
+        display: none;
+    }
     header, nav, #left-column, #right-column, #transcription-button, #xtra, footer {
         display: none;
     }
