@@ -31,7 +31,7 @@ var previouscontextualHtmlNumber = 1;
 var startingSeconds = getQueryVariable("s");
 
 // Add your base url with 'index.html' for the webpage to display the citations with
-var citationUrl = "index.html";
+var citationUrl = "";
 
 $(document).ready(function()
 {
@@ -512,7 +512,7 @@ function goToSentence(e)
 // Make Citation
 function makeCitation()
 {
-  var text = citationUrl + "?s=" + Math.round(player.getCurrentTime());
+  var text = citationUrl + "/index.html?s=" + Math.round(player.getCurrentTime());
   window.prompt("Copy to clipboard: PC: Ctrl+C, Enter - OSX Cmd+C, Enter", text);
 }
 
