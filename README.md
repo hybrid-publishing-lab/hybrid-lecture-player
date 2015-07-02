@@ -11,21 +11,21 @@ Here is a map of the features that the Hybrid Lecture Player proposes:
     
     ├── css                                   ==> style folder
     │   └── app.css                           style of the Hybrid Lecture Player
-    ├── data                                  ==> captions, slides and synchronization folder
+    ├── data                                  ==> captions, slides and sync. folder
     │   ├── captions.xml                      file where the captions are encoded
     │   ├── captions-LanguageCode.xml         captions in various languages
-    │   ├── ContextualHtml.xml                file where the additional materials are encoded 
+    │   ├── ContextualHtml.xml                additional materials 
     │   │                                     (bottom-right box)
-    │   ├── paragraphs.xml                    synchronization of the paragraphs and the video’s timeline
-    │   └── SlidesInPoints.xml                synchronization of the slides and the video’s timeline
+    │   ├── paragraphs.xml                    sync. of the paragraphs and the video
+    │   └── SlidesInPoints.xml                sync. of the slides and the video
     ├── html                                  ==> transcriptions folder
     │   ├── transcription.html                file where the transcription is encoded
     │   └── transcription-LanguageCode.html   transcription in various languages
     ├── images                                ==> slides folder
     │   └── …
-    ├── index.html                            the structure of the Hybrid Lecture Player’s page
+    ├── index.html                            the structure of the HLP’s page
     └── js                                    ==> javascript folder
-        ├── HybridVideo.js                    the heart of the Player: synchronization scripts
+        ├── HybridVideo.js                    synchronization scripts
         └── scrollTo                          automatic scrolling in the transcription
 
 
@@ -209,5 +209,8 @@ When there is nothing in the box during a time period here is what should be wri
 	<xtra begin="00:00:00" end="01:18:00"><![CDATA[]]></xtra>
 ```
 
+## To generate a pdf of the transcription
+
+Print and save a pdf of the page from the browser (doesn’t work in every browsers) in the root folder, and name it ```manual.pdf``` (replace the previous one if necessary). It will automatically be linked to the PDF button in the file ``ìndex.html```.
 
 # ready to play!
