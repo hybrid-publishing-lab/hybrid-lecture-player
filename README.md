@@ -1,7 +1,3 @@
-# bubbles
-Vanilla instance of the Hybrid Lecture Player
-
-
 # The Hybrid Lecture Player
 
 The Hybrid Lecture player is a platform that allows you to turn your lecture documentation into a multi-format publication tool with features such as subtitle transcription, transcription in prose form, translations, and embedded lecture material such as images, audio and visual files. Everything is synched and information can be accessed via multiple channels, through custom tables of contents and sections.
