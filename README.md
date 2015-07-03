@@ -2,6 +2,11 @@
 
 The Hybrid Lecture Player is a platform that allows you to turn your lecture documentation into a multi-format publication, with a toolkit with features such as subtitle transcription, transcription in prose form, translations, and embedded lecture material such as images, audio and visual files. Everything is synched and information can be accessed via multiple channels, through custom tables of contents and sections.
 
+You can find an online demo here https://hlp.consortium.io/  
+Here you can find the player used on a lecture about Marshall McLuhan's experimental media practice by the historian and curator Graham Larkin, call 'Finally Getting the Message: McLuhan's Media Practice', given at the Marshall McLuhan Salon, Canadian Embassy, Berlin, in 2011.
+
+https://mcluhan.consortium.io/
+
 Here is a map of the features that the Hybrid Lecture Player proposes:
 
 ![The Hybrid Lecture Player](http://hpg.io/img/HLP-white.png)
@@ -214,3 +219,17 @@ When there is nothing in the box during a time period here is what should be wri
 Print and save a pdf of the page from the browser (doesn’t work in every browsers) in the root folder, and name it ```manual.pdf``` (replace the previous one if necessary). It will automatically be linked to the PDF button in the file ```ìndex.html```.
 
 # ready to play!
+
+## Copyright
+
+Hybrid Lecture Player software is licenced as GNU Affero General Public Licensehttp://www.gnu.org/licenses/agpl-3.0.txt  
+Design Creative Commons Attribution-ShareAlike 3.0 Germany (CC BY-SA 3.0 DE) http://creativecommons.org/licenses/by-sa/3.0/de/deed.en   
+All software dependencies are copyright to their respective owners. All fonts are copyright to their respective owners.
+
+### About the Hybrid Publishing Consortium
+
+This Case Study is a project by the Hybrid Publishing Consortium (HPC), a research project with a mission to support the development of open source software for public infrastructures in publishing. HPC pursues a model of digital interoperability, frameworks as opposed to platforms, that combines ISO standards with experimental approaches to dynamic publishing, using existing Open Source expert projects.  
+HPC develops concepts for new forms of access to information, and specializes within their research in Museums, Libraries and Archives publishing.  
+
+Funded by the EU major project Innovation Incubator Lüneburg.  
+Hybrid Publishng Consortium develops open source software infrastructures for publishing and is part of the Hybrid Publishing Lab at the Centre for Digital Cultures, Leuphana University, Lüneburg, Germany and is funded by the European Union and the German federal State of Lower Saxony.
