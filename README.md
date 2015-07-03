@@ -3,9 +3,9 @@
 The Hybrid Lecture Player is a platform that allows you to turn your lecture documentation into a multi-format publication, with a toolkit with features such as subtitle transcription, transcription in prose form, translations, and embedded lecture material such as images, audio and visual files. Everything is synched and information can be accessed via multiple channels, through custom tables of contents and sections.
 
 You can find an online demo here https://hlp.consortium.io/  
-Here you can find the player used on a lecture about Marshall McLuhan's experimental media practice by the historian and curator Graham Larkin, call 'Finally Getting the Message: McLuhan's Media Practice', given at the Marshall McLuhan Salon, Canadian Embassy, Berlin, in 2011.
+Here you can find the player used on a lecture about Marshall McLuhan's experimental media practice by the historian and curator Graham Larkin, call 'Finally Getting the Message: McLuhan's Media Practice', given at the Marshall McLuhan Salon, Canadian Embassy, Berlin, in 2011. http://www.mcluhan-salon.de/
 
-https://mcluhan.consortium.io/
+Lecture link https://mcluhan.consortium.io/
 
 Here is a map of the features that the Hybrid Lecture Player proposes:
 
