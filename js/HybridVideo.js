@@ -31,7 +31,8 @@ var previouscontextualHtmlNumber = 1;
 var startingSeconds = getQueryVariable("s");
 
 // Add your base url with 'index.html' for the webpage to display the citations with
-var citationUrl = "";
+// No trailing slash!
+var citationUrl = "https://hlp.consortium.io";
 
 $(document).ready(function()
 {
